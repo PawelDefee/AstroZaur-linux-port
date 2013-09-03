@@ -1,0 +1,12 @@
+diff -rupN luafilesystem-master/Makefile luafilesystem-master.patched/Makefile
+--- luafilesystem-master/Makefile	2012-10-04 16:25:54.000000000 +0200
++++ luafilesystem-master.patched/Makefile	2013-09-01 13:43:16.329851024 +0200
+@@ -12,7 +12,7 @@ OBJS= src/$T.o
+ lib: src/lfs.so
+ 
+ src/lfs.so: $(OBJS)
+-	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET; $(CC) $(CFLAGS) $(LIB_OPTION) -o src/lfs.so $(OBJS)
++	MACOSX_DEPLOYMENT_TARGET="10.3"; export MACOSX_DEPLOYMENT_TARGET; $(CC) $(CFLAGS) $(LIB_OPTION) -o src/lfs.so $(OBJS) -llua
+ 
+ install:
+ 	mkdir -p $(LUA_LIBDIR)

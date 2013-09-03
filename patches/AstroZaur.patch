@@ -1,0 +1,639 @@
+diff -rupN AstroZaur/aspect_eql_lon.cpp AstroZaur.patched/aspect_eql_lon.cpp
+--- AstroZaur/aspect_eql_lon.cpp	2008-05-18 20:42:34.000000000 +0200
++++ AstroZaur.patched/aspect_eql_lon.cpp	2013-09-02 15:51:39.707766895 +0200
+@@ -24,6 +24,8 @@
+ #include "draw_area.h"
+ #include "aspect_eql_lon.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #include <fltk/draw.h>
+ #include <fltk/Color.h>
+diff -rupN AstroZaur/aspect_equator.cpp AstroZaur.patched/aspect_equator.cpp
+--- AstroZaur/aspect_equator.cpp	2008-05-13 23:43:12.000000000 +0200
++++ AstroZaur.patched/aspect_equator.cpp	2013-09-02 15:51:39.708772479 +0200
+@@ -24,6 +24,8 @@
+ #include "line.h"
+ #include "map.h"
+ #include "utils.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #include <fltk/Color.h>
+ #include <fltk/draw.h>
+diff -rupN AstroZaur/aspect_reception.cpp AstroZaur.patched/aspect_reception.cpp
+--- AstroZaur/aspect_reception.cpp	2008-05-14 00:41:34.000000000 +0200
++++ AstroZaur.patched/aspect_reception.cpp	2013-09-02 15:51:39.708772479 +0200
+@@ -25,6 +25,8 @@
+ #include "map.h"
+ #include "utils.h"
+ #include "division.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #include <fltk/Color.h>
+ #include <fltk/draw.h>
+diff -rupN AstroZaur/aspects.cpp AstroZaur.patched/aspects.cpp
+--- AstroZaur/aspects.cpp	2008-05-18 16:11:42.000000000 +0200
++++ AstroZaur.patched/aspects.cpp	2013-09-02 15:51:39.709804530 +0200
+@@ -25,6 +25,8 @@
+ #include "aspect_symetric.h"
+ #include "map.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ // CAspectData
+ 
+diff -rupN AstroZaur/aspect_symetric.cpp AstroZaur.patched/aspect_symetric.cpp
+--- AstroZaur/aspect_symetric.cpp	2008-05-14 00:11:45.000000000 +0200
++++ AstroZaur.patched/aspect_symetric.cpp	2013-09-02 15:51:39.709804530 +0200
+@@ -25,6 +25,8 @@
+ #include "map.h"
+ #include "utils.h"
+ #include "program.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #include <fltk/Color.h>
+ #include <fltk/draw.h>
+diff -rupN AstroZaur/astro.cpp AstroZaur.patched/astro.cpp
+--- AstroZaur/astro.cpp	2008-05-13 08:00:13.000000000 +0200
++++ AstroZaur.patched/astro.cpp	2013-09-02 15:51:39.710804655 +0200
+@@ -22,6 +22,8 @@
+ #include "utils.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CAstro::CAstro() {
+     iOwner = NULL;
+diff -rupN AstroZaur/atlas.cpp AstroZaur.patched/atlas.cpp
+--- AstroZaur/atlas.cpp	2008-06-04 12:45:03.000000000 +0200
++++ AstroZaur.patched/atlas.cpp	2013-09-02 15:51:39.711791865 +0200
+@@ -24,6 +24,8 @@
+ #include "lua.h"
+ #include "lua_gui.h"
+ #include <fltk/Item.h>
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CAtlas::CAtlas() {
+     iDb = NULL;
+diff -rupN AstroZaur/base_window.cpp AstroZaur.patched/base_window.cpp
+--- AstroZaur/base_window.cpp	2008-05-31 14:16:03.000000000 +0200
++++ AstroZaur.patched/base_window.cpp	2013-09-02 15:51:39.711791865 +0200
+@@ -18,6 +18,7 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
++#include <string.h>
+ #include <fltk/events.h>
+ #include "base_window.h"
+ #include "utils.h"
+diff -rupN AstroZaur/data/astrozaur.lua AstroZaur.patched/data/astrozaur.lua
+--- AstroZaur/data/astrozaur.lua	2008-06-04 13:39:26.000000000 +0200
++++ AstroZaur.patched/data/astrozaur.lua	2013-09-02 15:51:39.711791865 +0200
+@@ -11,7 +11,7 @@ require"data/division/term"
+ print"=== Welcome to AstroZaur ==="
+ 
+ dofile"data/pref.lua"
+-dofile"data/text/ru.lua"
++dofile"data/text/en.lua"
+ 	    
+ program.timezones(pref.timezones)
+ swe.path(pref.swe)
+diff -rupN AstroZaur/data/text/en.lua AstroZaur.patched/data/text/en.lua
+--- AstroZaur/data/text/en.lua	1970-01-01 01:00:00.000000000 +0100
++++ AstroZaur.patched/data/text/en.lua	2013-09-02 15:51:39.712798756 +0200
+@@ -0,0 +1,5 @@
++pref.help = "data/text/ru/help.html"
++pref.about = "data/text/ru/about.html"
++
++program.msg = {
++}
+diff -rupN AstroZaur/date.cpp AstroZaur.patched/date.cpp
+--- AstroZaur/date.cpp	2008-05-26 19:27:25.000000000 +0200
++++ AstroZaur.patched/date.cpp	2013-09-02 15:51:39.713795445 +0200
+@@ -23,6 +23,8 @@
+ #include "lua.h"
+ #include "date.h"
+ #include "program.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #define	JD1970 2440587.5
+ 
+diff -rupN AstroZaur/division.cpp AstroZaur.patched/division.cpp
+--- AstroZaur/division.cpp	2008-03-29 14:43:51.000000000 +0100
++++ AstroZaur.patched/division.cpp	2013-09-02 15:51:39.713795445 +0200
+@@ -18,8 +18,11 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
++#include <string.h>
+ #include "division.h"
+ #include "utils.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CDivision::CDivision() {
+     iItem = NULL;
+diff -rupN AstroZaur/division.h AstroZaur.patched/division.h
+--- AstroZaur/division.h	2008-03-29 14:43:35.000000000 +0100
++++ AstroZaur.patched/division.h	2013-09-02 15:51:39.714808226 +0200
+@@ -50,6 +50,7 @@ public:
+     void Sort();
+ };
+ 
+-extern CDivision division;
++#include "static_holder.h"
++#define division CStaticHolder::GetDivision()
+ 
+ #endif
+diff -rupN AstroZaur/draw_area.cpp AstroZaur.patched/draw_area.cpp
+--- AstroZaur/draw_area.cpp	2008-05-12 17:55:53.000000000 +0200
++++ AstroZaur.patched/draw_area.cpp	2013-09-02 15:51:39.716805794 +0200
+@@ -23,6 +23,8 @@
+ #include "program.h"
+ #include "projection.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include <math.h>
+ #include <fltk/draw.h>
+ #include <fltk/Font.h>
+diff -rupN AstroZaur/line.cpp AstroZaur.patched/line.cpp
+--- AstroZaur/line.cpp	2008-05-12 17:57:16.000000000 +0200
++++ AstroZaur.patched/line.cpp	2013-09-02 15:51:39.716805794 +0200
+@@ -18,9 +18,12 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
++#include <string.h>
+ #include "line.h"
+ #include "utils.h"
+ #include "draw_area.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include <fltk/draw.h>
+ #include <math.h>
+ 
+diff -rupN AstroZaur/log.cpp AstroZaur.patched/log.cpp
+--- AstroZaur/log.cpp	2008-05-29 09:47:49.000000000 +0200
++++ AstroZaur.patched/log.cpp	2013-09-02 15:51:39.717783465 +0200
+@@ -23,6 +23,8 @@
+ #include "utils.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "lua_gui.h"
+ #include <fltk/MenuBar.h>
+ #include <fltk/ItemGroup.h>
+diff -rupN AstroZaur/lua.cpp AstroZaur.patched/lua.cpp
+--- AstroZaur/lua.cpp	2008-06-04 11:41:01.000000000 +0200
++++ AstroZaur.patched/lua.cpp	2013-09-02 15:51:39.718799510 +0200
+@@ -22,6 +22,8 @@
+ #include <fltk/Threads.h>
+ 
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "lua_sqlite.h"
+ #include "lua_gui.h"
+ #include "lua_swe.h"
+diff -rupN AstroZaur/lua_gui.cpp AstroZaur.patched/lua_gui.cpp
+--- AstroZaur/lua_gui.cpp	2008-06-04 09:10:30.000000000 +0200
++++ AstroZaur.patched/lua_gui.cpp	2013-09-02 15:51:39.719795174 +0200
+@@ -19,6 +19,8 @@
+ */
+ 
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "lua_gui.h"
+ #include "program.h"
+ 
+diff -rupN AstroZaur/lua.h AstroZaur.patched/lua.h
+--- AstroZaur/lua.h	2008-05-13 07:55:48.000000000 +0200
++++ AstroZaur.patched/lua.h	2013-09-02 15:51:39.720797721 +0200
+@@ -120,6 +120,4 @@ public:
+     void Push();
+ };
+ 
+-extern CLua lua;
+-
+ #endif
+diff -rupN AstroZaur/main.cpp AstroZaur.patched/main.cpp
+--- AstroZaur/main.cpp	2008-06-03 16:35:29.000000000 +0200
++++ AstroZaur.patched/main.cpp	2013-09-02 15:51:39.720797721 +0200
+@@ -22,6 +22,8 @@
+ #include "program.h"
+ #include "division.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #ifdef DBUS
+     #include "dbus.h"
+@@ -31,13 +33,18 @@
+ 
+ using namespace fltk;
+ 
+-CLua		lua;
+-CDivision	division;
+-CProgram	program;
++CStaticHolder static_holder;
+ 
+ int main(int argc, char **argv) {
+ //    FileIcon::load_system_icons();
+ 
++    CLua		local_lua;
++    static_holder.Set(&local_lua);
++    CDivision	local_division;
++    static_holder.Set(&local_division);
++    CProgram	local_program;
++    static_holder.Set(&local_program);
++	
+     if (lua.Load("data/astrozaur.lua")) {
+         lua.Call(0);
+     }
+diff -rupN AstroZaur/Makefile AstroZaur.patched/Makefile
+--- AstroZaur/Makefile	2008-06-05 09:58:43.000000000 +0200
++++ AstroZaur.patched/Makefile	2013-09-02 15:51:39.721807806 +0200
+@@ -3,8 +3,8 @@ CFLAGS = -O2 -Wall -pipe
+ 
+ #DBUS = yes
+ 
+-FLTK_INC = $(shell fltk2-config --cflags)
+-FLTK_LIB = $(shell fltk2-config --libs --ldflags --use-images)
++FLTK_INC = $(shell ../fltk-2.0.x-r5272/fltk2-config --cflags)
++FLTK_LIB = $(shell ../fltk-2.0.x-r5272/fltk2-config --libs --ldflags --use-images)
+ 
+ XML_INC = $(shell xml2-config --cflags)
+ XML_LIB = $(shell xml2-config --libs)
+@@ -12,8 +12,8 @@ XML_LIB = $(shell xml2-config --libs)
+ LUA_INC = -I/usr/local/include
+ LUA_LIB = -L/usr/local/lib -llua
+ 
+-CFLAGS += $(FLTK_INC) $(XML_INC) $(LUA_INC)
+-LIBS += $(FLTK_LIB) $(XML_LIB) $(LUA_LIB) -lswe -lsqlite3
++CFLAGS += $(FLTK_INC) $(XML_INC) $(LUA_INC) -I./
++LIBS += $(FLTK_LIB) $(XML_LIB) $(LUA_LIB) -L./sweph -lswe -lsqlite3 -ldl
+ 
+ LIBS += -g
+ CFLAGS += -g
+@@ -47,6 +47,7 @@ OBJS = aspects.o aspect_eql_lon.o aspect
+ 	program.o\
+ 	projection.o\
+ 	resolve_aspect.o\
++	static_holder.o\
+ 	timezone.o\
+ 	transform_equator.o transform_horizont.o transform_sidereal.o transform_inmundo.o\
+ 	window.o utils.o
+@@ -96,14 +97,14 @@ date.o: utils.h lua.h date.h astro.h tim
+ date.o: point.h coord.h
+ dbus.o: dbus.h lua.h program.h astro.h maps.h map.h point.h coord.h utils.h
+ dbus.o: map_natal.h date.h timezone.h place.h
+-division.o: division.h astro.h utils.h
++division.o: division.h astro.h utils.h static_holder.h
+ draw_area.o: window.h maps.h astro.h map.h point.h coord.h utils.h
+ draw_area.o: draw_area.h base_window.h program.h projection.h lua.h
+ line.o: line.h astro.h lua.h utils.h draw_area.h
+ log.o: log.h base_window.h astro.h utils.h program.h maps.h map.h point.h
+ log.o: coord.h lua.h lua_gui.h
+ lua.o: lua.h lua_sqlite.h lua_gui.h lua_swe.h program.h astro.h maps.h map.h
+-lua.o: point.h coord.h utils.h division.h
++lua.o: point.h coord.h utils.h division.h static_holder.h
+ lua_gui.o: lua.h lua_gui.h program.h astro.h maps.h map.h point.h coord.h
+ lua_gui.o: utils.h
+ lua_sqlite.o: lua.h
+@@ -178,11 +179,12 @@ program.o: draw_area.h base_window.h log
+ program.o: date.h timezone.h place.h map_progres.h map_develop.h map_direct.h
+ program.o: map_date_select.h map_multy.h map_eqlipse.h map_middle.h
+ program.o: map_harmonic.h map_ingres.h map_raw.h map_revolution.h
+-program.o: map_stationar.h map_aspect.h resolve_aspect.h
++program.o: map_stationar.h map_aspect.h resolve_aspect.h static_holder.h
+ projection.o: projection.h astro.h program.h maps.h map.h point.h coord.h
+ projection.o: utils.h map_natal.h date.h timezone.h place.h draw_area.h lua.h
+ resolve_aspect.o: utils.h program.h astro.h maps.h map.h point.h coord.h
+ resolve_aspect.o: resolve_aspect.h date.h timezone.h lua.h
++static_holder.o: program.h lua.h division.h
+ timezone.o: program.h astro.h maps.h map.h point.h coord.h utils.h timezone.h
+ transform_equator.o: map_natal.h map.h astro.h point.h coord.h utils.h date.h
+ transform_equator.o: timezone.h place.h transform_equator.h transform.h
+diff -rupN AstroZaur/map.cpp AstroZaur.patched/map.cpp
+--- AstroZaur/map.cpp	2008-06-04 10:43:16.000000000 +0200
++++ AstroZaur.patched/map.cpp	2013-09-02 15:51:39.722793946 +0200
+@@ -18,6 +18,7 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
++#include <algorithm>
+ #include <math.h>
+ #include "astro.h"
+ #include "map.h"
+@@ -30,6 +31,9 @@
+ #include "transform_inmundo.h"
+ #include "transform_equator.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
++#include "static_holder.h"
+ #include "point_aspect.h"
+ 
+ #define PI 3.14159265358979323846
+diff -rupN AstroZaur/map_develop.cpp AstroZaur.patched/map_develop.cpp
+--- AstroZaur/map_develop.cpp	2008-05-31 17:40:18.000000000 +0200
++++ AstroZaur.patched/map_develop.cpp	2013-09-02 15:51:39.722793946 +0200
+@@ -23,6 +23,8 @@
+ #include "map_develop.h"
+ #include "map_develop_edit.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CMapDevelop::CMapDevelop() {
+     iParent = NULL;
+diff -rupN AstroZaur/map_direct.cpp AstroZaur.patched/map_direct.cpp
+--- AstroZaur/map_direct.cpp	2008-06-04 09:26:49.000000000 +0200
++++ AstroZaur.patched/map_direct.cpp	2013-09-02 15:51:39.723796160 +0200
+@@ -20,6 +20,8 @@
+ 
+ #include "utils.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "program.h"
+ #include "map_direct.h"
+ 
+diff -rupN AstroZaur/map_edit.cpp AstroZaur.patched/map_edit.cpp
+--- AstroZaur/map_edit.cpp	2008-06-04 11:00:02.000000000 +0200
++++ AstroZaur.patched/map_edit.cpp	2013-09-02 15:51:39.724803406 +0200
+@@ -21,6 +21,8 @@
+ #include "map_edit.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "lua_gui.h"
+ #include <fltk/ItemGroup.h>
+ #include <fltk/Item.h>
+diff -rupN AstroZaur/map_ingres.cpp AstroZaur.patched/map_ingres.cpp
+--- AstroZaur/map_ingres.cpp	2008-05-25 10:21:18.000000000 +0200
++++ AstroZaur.patched/map_ingres.cpp	2013-09-02 15:51:39.724803406 +0200
+@@ -23,6 +23,8 @@
+ #include "program.h"
+ #include "map_ingres.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CMapIngres::CMapIngres() {
+     Type("ingres");
+diff -rupN AstroZaur/map_multy.cpp AstroZaur.patched/map_multy.cpp
+--- AstroZaur/map_multy.cpp	2008-06-02 10:26:37.000000000 +0200
++++ AstroZaur.patched/map_multy.cpp	2013-09-02 15:51:39.725799024 +0200
+@@ -22,6 +22,8 @@
+ #include "utils.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ void CMapMulty::XML(xmlNodePtr node) {
+     xmlNodePtr subNode = node;
+diff -rupN AstroZaur/map_natal.cpp AstroZaur.patched/map_natal.cpp
+--- AstroZaur/map_natal.cpp	2008-06-04 11:16:07.000000000 +0200
++++ AstroZaur.patched/map_natal.cpp	2013-09-02 15:51:39.725799024 +0200
+@@ -22,6 +22,8 @@
+ #include "map_natal.h"
+ #include "map_natal_edit.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ extern "C" {
+     #include <sweph/swephexp.h>
+diff -rupN AstroZaur/map_progres.cpp AstroZaur.patched/map_progres.cpp
+--- AstroZaur/map_progres.cpp	2008-05-25 10:21:28.000000000 +0200
++++ AstroZaur.patched/map_progres.cpp	2013-09-02 15:51:39.726806510 +0200
+@@ -22,6 +22,8 @@
+ #include "map_progres.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CMapProgres::CMapProgres() {
+     Type("progres");
+diff -rupN AstroZaur/map_revolution.cpp AstroZaur.patched/map_revolution.cpp
+--- AstroZaur/map_revolution.cpp	2008-05-31 17:03:51.000000000 +0200
++++ AstroZaur.patched/map_revolution.cpp	2013-09-02 15:51:39.726806510 +0200
+@@ -22,6 +22,8 @@
+ #include "utils.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "map_revolution.h"
+ 
+ CMapRevolution::CMapRevolution() {
+diff -rupN AstroZaur/maps.cpp AstroZaur.patched/maps.cpp
+--- AstroZaur/maps.cpp	2008-05-26 19:27:45.000000000 +0200
++++ AstroZaur.patched/maps.cpp	2013-09-02 15:51:39.727794128 +0200
+@@ -28,6 +28,8 @@
+ #include "draw_area.h"
+ #include "utils.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CMaps::CMaps() {
+     iAspectTable = new CAspectTable;
+diff -rupN AstroZaur/place.cpp AstroZaur.patched/place.cpp
+--- AstroZaur/place.cpp	2008-05-26 19:26:31.000000000 +0200
++++ AstroZaur.patched/place.cpp	2013-09-02 15:51:39.727794128 +0200
+@@ -23,6 +23,8 @@
+ #include "place.h"
+ #include "utils.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "program.h"
+ 
+ CPlace::CPlace() {
+diff -rupN AstroZaur/point.cpp AstroZaur.patched/point.cpp
+--- AstroZaur/point.cpp	2008-05-26 19:26:24.000000000 +0200
++++ AstroZaur.patched/point.cpp	2013-09-02 15:51:39.728792223 +0200
+@@ -25,6 +25,8 @@
+ #include "utils.h"
+ #include "program.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "aspects.h"
+ #include "line.h"
+ #include <string>
+diff -rupN AstroZaur/program.cpp AstroZaur.patched/program.cpp
+--- AstroZaur/program.cpp	2008-06-04 11:39:49.000000000 +0200
++++ AstroZaur.patched/program.cpp	2013-09-02 15:51:39.729794554 +0200
+@@ -23,6 +23,8 @@
+ #include "window.h"
+ #include "log.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "division.h"
+ #include "map_natal.h"
+ #include "map_progres.h"
+@@ -38,6 +40,7 @@
+ #include "map_aspect.h"
+ #include <fltk/Menu.h>
+ #include <fltk/SharedImage.h>
++#include "static_holder.h"
+ 
+ extern "C" {
+     #include <sweph/swephexp.h>
+diff -rupN AstroZaur/program.h AstroZaur.patched/program.h
+--- AstroZaur/program.h	2008-05-31 15:00:57.000000000 +0200
++++ AstroZaur.patched/program.h	2013-09-02 15:51:39.729794554 +0200
+@@ -95,6 +95,7 @@ public:
+     bool LuaGet(const char* var);
+ };
+ 
+-extern CProgram program;
++#include "static_holder.h"
++#define program CStaticHolder::GetProgram()
+ 
+ #endif
+diff -rupN AstroZaur/projection.cpp AstroZaur.patched/projection.cpp
+--- AstroZaur/projection.cpp	2008-05-26 19:26:53.000000000 +0200
++++ AstroZaur.patched/projection.cpp	2013-09-02 15:51:39.730795729 +0200
+@@ -23,6 +23,8 @@
+ #include "map_natal.h"
+ #include "draw_area.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ #ifdef DBUS
+     #include "dbus.h"
+@@ -261,7 +263,8 @@ char* CEqliptic::InfoStr(CPoint* point) 
+     char *text = point->Ecliptic()->LonStr();
+ 
+     if (point->LonSpeed() < 0) {
+-	text = (char*) realloc((void*) text, strlen(text)+1);
++        // We realloc strlen+2 due to NULL termination!
++	text = (char*) realloc((void*) text, strlen(text)+2);
+ 	strcat(text, "R");
+     }
+ 
+diff -rupN AstroZaur/resolve_aspect.cpp AstroZaur.patched/resolve_aspect.cpp
+--- AstroZaur/resolve_aspect.cpp	2008-01-29 14:03:55.000000000 +0100
++++ AstroZaur.patched/resolve_aspect.cpp	2013-09-02 15:51:39.730795729 +0200
+@@ -23,6 +23,8 @@
+ #include "program.h"
+ #include "resolve_aspect.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ 
+ CResolveAspect::CResolveAspect() {
+     iPoint1 = NULL;
+diff -rupN AstroZaur/static_holder.cpp AstroZaur.patched/static_holder.cpp
+--- AstroZaur/static_holder.cpp	1970-01-01 01:00:00.000000000 +0100
++++ AstroZaur.patched/static_holder.cpp	2013-09-02 15:51:39.731809884 +0200
+@@ -0,0 +1,40 @@
++/*
++    Copyright (C) 2013 Pawel Defee <pawel.defee@iki.fi>
++*/
++
++#include "static_holder.h"
++#include "utils.h"
++
++CLua* CStaticHolder::lua_ = NULL;
++CDivision* CStaticHolder::division_ = NULL;
++CProgram* CStaticHolder::program_ = NULL;
++
++CStaticHolder::CStaticHolder() {
++}
++
++CStaticHolder::~CStaticHolder() {
++}
++
++void  CStaticHolder::Set(CLua* aLua) {
++	lua_ = aLua;
++}
++
++void  CStaticHolder::Set(CDivision* aDivision) {
++	division_ = aDivision;
++}
++
++void  CStaticHolder::Set(CProgram* aProgram) {
++	program_ = aProgram;
++}
++
++CLua& CStaticHolder::GetLua() {
++	return *lua_;
++}
++
++CDivision& CStaticHolder::GetDivision() {
++	return *division_;
++}
++
++CProgram& CStaticHolder::GetProgram() {
++	return *program_;
++}
+diff -rupN AstroZaur/static_holder.h AstroZaur.patched/static_holder.h
+--- AstroZaur/static_holder.h	1970-01-01 01:00:00.000000000 +0100
++++ AstroZaur.patched/static_holder.h	2013-09-02 15:51:39.731809884 +0200
+@@ -0,0 +1,33 @@
++/*
++    Copyright (C) 2013 Pawel Defee <pawel.defee@iki.fi>
++*/
++
++#ifndef _STATIC_HOLDER_H_
++#define _STATIC_HOLDER_H_
++
++#include "program.h"
++#include "division.h"
++#include "lua.h"
++
++using namespace std;
++
++class CStaticHolder {
++private:
++    static CLua*		lua_;
++    static CDivision*     division_;
++    static CProgram*	program_;
++
++public:
++    CStaticHolder();
++    ~CStaticHolder();
++
++    void Set(CLua* aLua);
++    void Set(CDivision* aDivision);
++    void Set(CProgram* aProgram);
++
++    static CLua& GetLua();
++    static CDivision& GetDivision();
++    static CProgram& GetProgram();
++};
++
++#endif // _STATIC_HOLDER_H_
+diff -rupN AstroZaur/window.cpp AstroZaur.patched/window.cpp
+--- AstroZaur/window.cpp	2008-06-03 15:57:28.000000000 +0200
++++ AstroZaur.patched/window.cpp	2013-09-02 15:51:39.732795962 +0200
+@@ -28,6 +28,8 @@
+ #include "map_raw.h"
+ #include "log.h"
+ #include "lua.h"
++#include "static_holder.h"
++#define lua CStaticHolder::GetLua()
+ #include "lua_gui.h"
+ #include <fltk/file_chooser.h>
+ #include <fltk/ask.h>
