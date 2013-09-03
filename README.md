@@ -69,3 +69,11 @@ Original patches in the Linux port
 	* Linux system functions used improperly (scandir)
 	* Out-of-bounds access for memory buffers in pixel blitting functions
 	* Invalid pointer access in font handling functions
+
+* The LFS patch at:
+
+			./patches/luafilesystem-master.patch
+
+	that corrects the following defects:
+	* Compilation when client Lua runtime is statically linked with the executable
+
