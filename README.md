@@ -60,7 +60,12 @@ Original patches in the Linux port
 	* Compilation errors due to invalid Make definitions
 	* Crash due to memory corruption in Ubuntu Linux due to undeterministic usage of globally initialized objects.
 	* Forced English language due to incorrect display of UTF-8 (Cyrillic) characters
-	
-			./patches/AstroZaur.patch
 
+* The FLTK patch at:
 
+			./patches/fltk-2.0.x-r5272.patch
+
+	that corrects the following defects:
+	* Linux system functions used improperly (scandir)
+	* Out-of-bounds access for memory buffers in pixel blitting functions
+	* Invalid pointer access in font handling functions
