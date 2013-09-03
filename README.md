@@ -23,7 +23,7 @@ Note: other libraries (such as libxml, ncurses etc) may be needed to compile thi
 
 * The original [AstroZaur] [1] application deployed for Sharp Zaurus PDA:
 	
-	./download/AstroZaur.tar.gz
+		./download/AstroZaur.tar.gz
 
 * Fast Light Toolkit 2.0 [revision 5272] [2].
 
