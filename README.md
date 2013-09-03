@@ -27,19 +27,19 @@ Note: other libraries (such as libxml, ncurses etc) may be needed to compile thi
 
 * Fast Light Toolkit 2.0 [revision 5272] [2].
 
-	./download/fltk-2.0.x-r5272.tar.gz
+		./download/fltk-2.0.x-r5272.tar.gz
 
 * The [Lua] [3] programming language runtime version 5.1.5.
 
-	./download/lua-5.1.5.tar.gz
+		./download/lua-5.1.5.tar.gz
 
 * The [Lua File System] [4] library.
 
-	./download/luafilesystem-master.zip
+		./download/luafilesystem-master.zip
 
 * The state-of-the-art [SWISS EPHEMERIS] [5] library by AstroDienst.
 
-	./download/swe_unix_src_1.79.00.tar.gz
+		./download/swe_unix_src_1.79.00.tar.gz
 
 
   [1]: http://strijar.ru/astrozaur/        "AstroZaur"
