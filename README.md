@@ -21,9 +21,7 @@ Sourced contents of the Linux port
 
 Note: other libraries (such as libxml, ncurses etc) may be needed to compile this software. This repository only includes those packages that needed explicit patching or specific versions for a functional port to Linux.
 
-* http://github.com/PawelDefee/AstroZaur-linux-port/download/AstroZaur.tar.gz
-
-	The original [AstroZaur] [1] application deployed for Sharp Zaurus PDA.
+* The original [AstroZaur] [6] application deployed for Sharp Zaurus PDA.
 
 * ./download/fltk-2.0.x-r5272.tar.gz
 
@@ -46,6 +44,7 @@ The state-of-the-art [SWISS EPHEMERIS] [5] library by AstroDienst.
   [3]: http://www.lua.org    "LUA 5.1.5"
   [4]: http://keplerproject.github.io/luafilesystem/    "LFS"
   [5]: http://www.astro.com/ftp/swisseph/	"SwissEph"
+  [6]: https://github.com/PawelDefee/AstroZaur-linux-port/blob/569e1181575e3de9b27bea2529e6f3bac617753f/download/AstroZaur.tar.gz	"AstroZaur"
 
 Original patches in the Linux port
 ----------------------------------
