@@ -21,9 +21,10 @@ Sourced contents of the Linux port
 
 Note: other libraries (such as libxml, ncurses etc) may be needed to compile this software. This repository only includes those packages that needed explicit patching or specific versions for a functional port to Linux.
 
-* The original [AstroZaur] [6] application deployed for Sharp Zaurus PDA.
+* The original AstroZaur application deployed for Sharp Zaurus PDA:
+	http://strijar.ru/astrozaur/
 
-* ./download/fltk-2.0.x-r5272.tar.gz
+./download/fltk-2.0.x-r5272.tar.gz
 
 Fast Light Toolkit 2.0 [revision 5272] [2].
 
