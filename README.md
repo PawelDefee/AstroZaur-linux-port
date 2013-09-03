@@ -39,14 +39,13 @@ The [Lua File System] [4] library.
 
 ./download/swe_unix_src_1.79.00.tar.gz
 
-The state-of-the-art SWISS EPHEMERIS library by AstroDienst. Obtained from:
-
-http://www.astro.com/ftp/swisseph/
+The state-of-the-art [SWISS EPHEMERIS] [5] library by AstroDienst.
 
   [1]: http://strijar.ru/astrozaur/        "AstroZaur"
   [2]: http://strijar.ru/astrozaur/compile/  "FLTK patched"
   [3]: http://www.lua.org    "LUA 5.1.5"
   [4]: http://keplerproject.github.io/luafilesystem/    "LFS"
+  [5]: http://www.astro.com/ftp/swisseph/	"SwissEph"
 
 
 
