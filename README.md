@@ -51,7 +51,11 @@ Note: other libraries (such as libxml, ncurses etc) may be needed to compile thi
 Original patches in the Linux port
 ----------------------------------
 
-* The AstroZaur patch that corrects the following defects:
+* The AstroZaur patch at:
+
+			./patches/AstroZaur.patch
+
+	that corrects the following defects:
 	* Compilation errors due to missing standard include files
 	* Compilation errors due to invalid Make definitions
 	* Crash due to memory corruption in Ubuntu Linux due to undeterministic usage of globally initialized objects.
