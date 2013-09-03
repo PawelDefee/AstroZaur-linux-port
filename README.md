@@ -19,15 +19,15 @@ The ported software has been succesfully built and run on RedHat RHEL 6 and Ubun
 Contents of the Linux port
 --------------------------
 
+Note: other libraries (such as libxml, ncurses etc) may be needed to compile this software. This repository only includes those packages that needed explicit patching or specific versions for a functional port to Linux.
+
 ./download/AstroZaur.tar.gz
 
-The original AstroZaur application deployed for Sharp Zaurus PDA. Obtained from:
-http://strijar.ru/astrozaur/
+The original [AstroZaur] [1] application deployed for Sharp Zaurus PDA.
 
 ./download/fltk-2.0.x-r5272.tar.gz
 
-Fast Light Toolkit 2.0 revision 5272. Obtained from:
-http://strijar.ru/astrozaur/compile/
+Fast Light Toolkit 2.0 [revision 5272] [2].
 
 ./download/lua-5.1.5.tar.gz
 
@@ -46,6 +46,10 @@ http://keplerproject.github.io/luafilesystem/
 The state-of-the-art SWISS EPHEMERIS library by AstroDienst. Obtained from:
 
 http://www.astro.com/ftp/swisseph/
+
+  [1]: http://strijar.ru/astrozaur/        "AstroZaur"
+  [2]: http://strijar.ru/astrozaur/compile/  "FLTK patched"
+  [3]: http://search.msn.com/    "MSN Search"
 
 
 
