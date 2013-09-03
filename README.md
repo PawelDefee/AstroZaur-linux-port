@@ -75,5 +75,5 @@ Original patches in the Linux port
 			./patches/luafilesystem-master.patch
 
 	that corrects the following defects:
-	* Compilation when client Lua runtime is statically linked with the executable
+	* Compilation errors when client Lua runtime is statically linked with the executable
 
