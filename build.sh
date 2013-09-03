@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright
+# Copyright (c) Pawel Defée 2013
 # Usage: Run the script as is. If running on a system requiring sudo
 # access for installation, run with USE_SUDO_INSTALL=sudo ./build.sh
 
