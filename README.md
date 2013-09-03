@@ -31,15 +31,11 @@ Fast Light Toolkit 2.0 [revision 5272] [2].
 
 ./download/lua-5.1.5.tar.gz
 
-The Lua programming language runtime version 5.1.5. Obtained from:
-
-http://www.lua.org
+The [Lua] [3] programming language runtime version 5.1.5.
 
 ./download/luafilesystem-master.zip
 
-The Lua File System library. Obtained from:
-
-http://keplerproject.github.io/luafilesystem/
+The [Lua File System] [4] library.
 
 ./download/swe_unix_src_1.79.00.tar.gz
 
@@ -49,7 +45,8 @@ http://www.astro.com/ftp/swisseph/
 
   [1]: http://strijar.ru/astrozaur/        "AstroZaur"
   [2]: http://strijar.ru/astrozaur/compile/  "FLTK patched"
-  [3]: http://search.msn.com/    "MSN Search"
+  [3]: http://www.lua.org    "LUA 5.1.5"
+  [4]: http://keplerproject.github.io/luafilesystem/    "LFS"
 
 
 
