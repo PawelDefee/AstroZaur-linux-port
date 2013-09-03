@@ -16,16 +16,16 @@ The resulting application binary can be found at ./build/AstroZaur/astrozaur . I
 		
 The ported software has been succesfully built and run on RedHat RHEL 6 and Ubuntu 12.10 Linux distributions.
 
-Contents of the Linux port
---------------------------
+Sourced contents of the Linux port
+----------------------------------
 
 Note: other libraries (such as libxml, ncurses etc) may be needed to compile this software. This repository only includes those packages that needed explicit patching or specific versions for a functional port to Linux.
 
-./download/AstroZaur.tar.gz
+* http://github.com/PawelDefee/AstroZaur-linux-port/download/AstroZaur.tar.gz
 
-The original [AstroZaur] [1] application deployed for Sharp Zaurus PDA.
+	The original [AstroZaur] [1] application deployed for Sharp Zaurus PDA.
 
-./download/fltk-2.0.x-r5272.tar.gz
+* ./download/fltk-2.0.x-r5272.tar.gz
 
 Fast Light Toolkit 2.0 [revision 5272] [2].
 
@@ -47,5 +47,7 @@ The state-of-the-art [SWISS EPHEMERIS] [5] library by AstroDienst.
   [4]: http://keplerproject.github.io/luafilesystem/    "LFS"
   [5]: http://www.astro.com/ftp/swisseph/	"SwissEph"
 
+Original patches in the Linux port
+----------------------------------
 
 
