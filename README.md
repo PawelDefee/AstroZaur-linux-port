@@ -37,5 +37,15 @@ http://www.lua.org
 
 ./download/luafilesystem-master.zip
 
+The Lua File System library. Obtained from:
+
+http://keplerproject.github.io/luafilesystem/
+
+./download/swe_unix_src_1.79.00.tar.gz
+
+The state-of-the-art SWISS EPHEMERIS library by AstroDienst. Obtained from:
+
+http://www.astro.com/ftp/swisseph/
+
 
 
