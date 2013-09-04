@@ -46,7 +46,7 @@ Note: other libraries (such as libxml, ncurses etc) may be needed to compile thi
   [2]: http://strijar.ru/astrozaur/compile/  "FLTK patched"
   [3]: http://www.lua.org    "LUA 5.1.5"
   [4]: http://keplerproject.github.io/luafilesystem/    "LFS"
-  [5]: http://www.astro.com/ftp/swisseph/	"SwissEph"
+  [5]: http://www.astro.com/ftp/swisseph/    "SwissEph"
 
 Original patches in the Linux port
 ----------------------------------
