@@ -48,8 +48,10 @@ Note: other libraries (such as libxml, ncurses etc) may be needed to compile thi
   [4]: http://keplerproject.github.io/luafilesystem/    "LFS"
   [5]: http://www.astro.com/ftp/swisseph/    "SwissEph"
 
-Original patches in the Linux port
+Original patches in this Linux port
 ----------------------------------
+
+Copyright (c) Pawel Defée 2013
 
 * The AstroZaur patch at:
 
