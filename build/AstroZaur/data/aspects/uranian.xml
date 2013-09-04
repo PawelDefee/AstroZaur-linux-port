@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <aspects>
+	<clear/>
+	<eqliptic>
+	    <lon>
+		0
+		<angle>0.0</angle>
+		<view>true</view>
+		<orbis id="natal">1.5</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		180
+		<angle>180.0</angle>
+		<view>true</view>
+		<orbis id="natal">1.5</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    
+	    <lon>
+		90
+		<angle>90.0</angle>
+		<view>true</view>
+		<orbis id="natal">1.0</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    
+	    <!--
+	    <lon>
+		45
+		<angle>45.0</angle>
+		<view>true</view>
+		<orbis id="natal">0.5</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		135
+		<angle>135.0</angle>
+		<view>true</view>
+		<orbis id="natal">0.5</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+
+	    <lon>
+		22.5
+		<angle>22.5</angle>
+		<view>true</view>
+		<orbis id="natal">0.25</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		67.5
+		<angle>67.5</angle>
+		<view>true</view>
+		<orbis id="natal">0.25</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		157.5
+		<angle>157.5</angle>
+		<view>true</view>
+		<orbis id="natal">0.25</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		112.5
+		<angle>112.5</angle>
+		<view>true</view>
+		<orbis id="natal">0.25</orbis>
+		<orbis id="prognos">0.25</orbis>
+		<line_style>dot</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    -->
+	    <exclude>
+		<point name="NNode">
+		    <point name="SNode"/>
+		</point>
+		<point category="house"/>
+	    </exclude>
+	    <orbises>
+		natal
+	    </orbises>
+	</eqliptic>
+    </aspects>
+</astrozaur>

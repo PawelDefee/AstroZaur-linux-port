@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <points>
+	<point name="Chiron" type="swiss">
+	    <id>15</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.0193
+		</chunk>
+	    </lua>
+	    <color>#808080</color>
+	    <bitmap>data/pixmaps/chiron.gif</bitmap>
+	    <category>asteroid</category>
+	</point>
+
+	<point name="Juno" type="swiss">
+	    <id>19</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.2259
+		</chunk>
+	    </lua>
+	    <color>#808080</color>
+	    <bitmap>data/pixmaps/juno.gif</bitmap>
+	    <category>asteroid</category>
+	</point>
+
+	<point name="Pallas" type="swiss">
+	    <id>18</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.21366
+		</chunk>
+	    </lua>
+	    <color>#808080</color>
+	    <bitmap>data/pixmaps/pallas.gif</bitmap>
+	    <category>asteroid</category>
+	</point>
+
+	<point name="Vesta" type="swiss">
+	    <id>20</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.27168
+		</chunk>
+	    </lua>
+	    <color>#808080</color>
+	    <bitmap>data/pixmaps/vesta.gif</bitmap>
+	    <category>asteroid</category>
+	</point>
+
+        <point name="Ceres" type="swiss">
+	    <id>17</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.21415
+		</chunk>
+	    </lua>
+    	    <color>#808080</color>
+	    <bitmap>data/pixmaps/ceres.gif</bitmap>
+	    <category>asteroid</category>
+	</point>
+    </points>
+</astrozaur>

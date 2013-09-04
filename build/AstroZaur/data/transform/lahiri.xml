@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <transform type="sidereal">
+	<date>1/01/1950</date>
+	<size>23.1594444</size>
+	<speed>49.9</speed>
+    </transform>
+</astrozaur>

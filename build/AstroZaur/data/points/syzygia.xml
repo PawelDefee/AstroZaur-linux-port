@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <points>
+	<point name="Syzygia" type="aspect">
+	    <point name="Moon"/>
+	    <point name="Sun"/>
+	    <lon>180</lon>
+	    <lon>360</lon>
+	    <color>#008000</color>
+	    <bitmap>data/pixmaps/moonphase.gif</bitmap>
+	    <category>phase</category>
+	</point>
+    </points>
+</astrozaur>

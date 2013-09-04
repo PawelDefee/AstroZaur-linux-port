@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <aspects>
+	<clear/>
+	<eqliptic>
+	    <point1_fixed/>
+	    <point2_fixed/>
+
+	    <!-- major -->
+	    <lon>
+		[font color=green]0[/font]
+		<angle>0.0</angle>
+		<view>true</view>
+		<orbis id="0">2.0</orbis>
+		<orbis id="1">1.5</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#006600</color>
+		<color part="0.85">#33CC00</color>
+		<color part="1.0">#66FF99</color>
+	    </lon>
+	    <lon>
+		[font color=red]60[/font]
+		<angle>60.0</angle>
+		<view>true</view>
+		<orbis id="0">2.0</orbis>
+		<orbis id="1">1.5</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    <lon>
+		[font color=green]72[/font]
+		<angle>72.0</angle>
+		<view>true</view>
+		<orbis id="0">2.0</orbis>
+		<orbis id="1">1.5</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#00FF00</color>
+		<color part="0.85">#57FF57</color>
+		<color part="1.0">#ABFFAB</color>
+	    </lon>
+	    <lon>
+		[font color=black]90[/font]
+		<angle>90.0</angle>
+		<view>true</view>
+		<orbis id="0">2.0</orbis>
+		<orbis id="1">1.5</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		[font color=red]120[/font]
+		<angle>120.0</angle>
+		<view>true</view>
+		<orbis id="0">2.0</orbis>
+		<orbis id="1">1.5</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    <lon>
+		[font color=black]180[/font]
+		<angle>180.0</angle>
+		<view>true</view>
+		<line_style>solid</line_style>
+		<orbis id="0">2.0</orbis>
+		<orbis id="1">1.5</orbis>
+		<orbis id="2">1.0</orbis>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    
+	    <!-- minor -->
+	    <!--
+	    <lon>
+		30
+		<angle>30.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    <lon>
+		36
+		<angle>36.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#00FF00</color>
+		<color part="0.85">#57FF57</color>
+		<color part="1.0">#ABFFAB</color>
+	    </lon>
+	    <lon>
+		40
+		<angle>40.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#0000FF</color>
+		<color part="0.85">#5757FF</color>
+		<color part="1.0">#ABABFF</color>
+	    </lon>
+	    <lon>
+		45
+		<angle>45.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		80
+		<angle>80.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#0000FF</color>
+		<color part="0.85">#5757FF</color>
+		<color part="1.0">#ABABFF</color>
+	    </lon>
+	    <lon>
+		100
+		<angle>100.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#0000FF</color>
+		<color part="0.85">#5757FF</color>
+		<color part="1.0">#ABABFF</color>
+	    </lon>
+	    <lon>
+		108
+		<angle>108.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#00FF00</color>
+		<color part="0.85">#57FF57</color>
+		<color part="1.0">#ABFFAB</color>
+	    </lon>
+	    <lon>
+		135
+		<angle>135.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    <lon>
+		144
+		<angle>144.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#00FF00</color>
+		<color part="0.85">#57FF57</color>
+		<color part="1.0">#ABFFAB</color>
+	    </lon>
+	    <lon>
+		150
+		<angle>150.0</angle>
+		<view>true</view>
+		<orbis id="0">1.0</orbis>
+		<orbis id="1">1.0</orbis>
+		<orbis id="2">1.0</orbis>
+		<line_style>dash</line_style>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    -->
+	    
+	    <exclude>
+		<point category="star/m0"/>
+		<point category="star/m1"/>
+		<point category="star/m2"/>
+		<point category="star/m3"/>
+		<point category="star/m4"/>
+		<point category="star/m5"/>
+		
+		<point category="house">
+		    <point category="axis"/>
+		    <point category="house"/>
+		</point>
+		<point category="axis">
+		    <point category="axis"/>
+		    <point category="house"/>
+		</point>
+	    </exclude>
+	    <orbises>
+		2
+		<point name="Sun">0</point>
+		<point name="Moon">1</point>
+	    </orbises>
+	</eqliptic>
+    </aspects>
+</astrozaur>

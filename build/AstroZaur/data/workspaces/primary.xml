@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <window x="11" y="27" w="392" h="415" title="Natal">
+	<chart type="natal">
+	    <id>natal</id>
+	    <file>data/charts/natal/kennedi.xml</file>
+	    <file>data/points/natal.xml</file>
+	</chart>
+    
+	<chart type="natal">
+	    <id>date</id>
+	    <info>Date</info>
+	    <date>22/11/1963</date>
+	    <time>12:00</time>
+	    <file>data/points/tranzit.xml</file>
+	</chart>
+
+	<file>data/aspects/tranzit.xml</file>
+	<active_chart name="id:natal"/>
+	<aspect_chart name="id:date"/>
+	<start_chart name="id:natal" point="Asc"/>
+    </window>
+
+    <window x="415" y="27" w="390" h="415" title="Directions">
+	<chart type="natal">
+	    <info>Natal direct</info>
+	    <date clone="id:natal"/>
+	    <place clone="id:natal"/>
+	    <file>data/points/natal.xml</file>
+	</chart>
+    
+	<chart type="progres">
+	    <info>Primary direct</info>
+	    <id>direct</id>
+	    <date clone="id:date"/>
+	    <place clone="id:natal"/>
+	    <parent_chart clone="Natal direct"/>
+	    <rotate_sec>86400</rotate_sec>
+	    <k1>1</k1>
+	    <k2>360</k2>
+	    <file>data/points/natal.xml</file>
+	</chart>
+	<file>data/aspects/direction.xml</file>
+	<active_chart name="id:direct"/>
+	<aspect_chart name="Natal direct"/>
+	<start_chart name="id:direct" point="Asc"/>
+    </window>
+
+    <window x="415" y="27" w="390" h="415" title="Inmundo">
+	<chart type="natal">
+	    <info>Natal inmundo</info>
+	    <date clone="id:natal"/>
+	    <place clone="id:natal"/>
+	    <transform type="inmundo"/>
+	    <file>data/points/natal.xml</file>
+	</chart>
+    
+	<chart type="progres">
+	    <info>Primary inmundo</info>
+	    <id>direct inmundo</id>
+	    <date clone="id:date"/>
+	    <place clone="id:natal"/>
+	    <parent_chart clone="Natal inmundo"/>
+	    <rotate_sec>86400</rotate_sec>
+	    <k1>1</k1>
+	    <k2>360</k2>
+	    <transform type="inmundo"/>
+	    <file>data/points/natal.xml</file>
+	</chart>
+	<file>data/aspects/direction.xml</file>
+	<active_chart name="id:direct in mundo"/>
+	<aspect_chart name="Natal inmundo"/>
+	<start_chart name="id:direct" point="Asc"/>
+    </window>
+</astrozaur>

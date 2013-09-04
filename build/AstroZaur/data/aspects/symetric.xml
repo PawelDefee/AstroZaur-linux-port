@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <aspects>
+	<symetric>
+	    ContrAntis
+	    <orbis>1.0</orbis>
+	    <axis>0</axis>
+	    <line>
+	        <style>solid</style>
+	        <width>2</width>
+	        <color>#99FFFF</color>
+	    </line>
+	    <exclude>
+		<point name="NNode">
+		    <point name="SNode"/>
+		</point>
+		<point category="axis"/>
+		<point category="house"/>
+		<point category="star/m0"/>
+		<point category="star/m1"/>
+		<point category="star/m2"/>
+		<point category="star/m3"/>
+		<point category="star/m4"/>
+		<point category="star/m5"/>
+	    </exclude>
+	</symetric>
+	<symetric>
+	    Antis
+	    <orbis>1.0</orbis>
+	    <axis>90</axis>
+	    <line>
+	        <style>solid</style>
+	        <width>2</width>
+	        <color>#FFFF55</color>
+	    </line>
+	    <exclude>
+		<point name="NNode">
+		    <point name="SNode"/>
+		</point>
+		<point category="axis"/>
+		<point category="house"/>
+		<point category="star/m0"/>
+		<point category="star/m1"/>
+		<point category="star/m2"/>
+		<point category="star/m3"/>
+		<point category="star/m4"/>
+		<point category="star/m5"/>
+	    </exclude>
+	</symetric>
+    </aspects>
+</astrozaur>

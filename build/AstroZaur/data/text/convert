@@ -1,0 +1,1 @@
+iconv -f koi8r -t utf8 ru.lua.koi8 > ru.lua

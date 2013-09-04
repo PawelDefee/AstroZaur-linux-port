@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <aspects>
+	<clear/>
+	<reception>
+	    <division>Ruling day</division>
+	    <division>Ruling night</division>
+	    <division>Exalted</division>
+	    <division>Fas</division>
+	    <division>Term</division>
+	    <division>Triplicitet day</division>
+	    <division>Triplicitet night</division>
+	    <both>
+		<line>
+		    <style>solid</style>
+		    <curve>8.0</curve>
+		    <width>2</width>
+		    <color>#FF99FF</color>
+		</line>
+	    </both>
+	    <exclude>
+		<point name="NNode">
+		    <point name="SNode"/>
+		</point>
+		<point category="axis"/>
+		<point category="house"/>
+		<point category="pars"/>
+	    </exclude>
+	</reception>
+	<eqliptic>
+	    <lon>
+		[font color=green]0[/font]
+		<angle>0.0</angle>
+		<view>true</view>
+		<orbis id="Sun-Moon">13.5</orbis>
+		<orbis id="Sun-Mercury">11</orbis>
+		<orbis id="Sun-Venus">11</orbis>
+		<orbis id="Sun-Mars">11</orbis>
+		<orbis id="Sun-Jupiter">12</orbis>
+		<orbis id="Sun-Saturn">12</orbis>
+		<orbis id="Moon-Mercury">9.5</orbis>
+		<orbis id="Moon-Venus">9.5</orbis>
+		<orbis id="Moon-Mars">9.5</orbis>
+		<orbis id="Moon-Jupiter">10.5</orbis>
+		<orbis id="Moon-Saturn">10.5</orbis>
+		<orbis id="Mercury-Venus">7</orbis>
+		<orbis id="Mercury-Mars">7</orbis>
+		<orbis id="Mercury-Jupiter">8</orbis>
+		<orbis id="Mercury-Saturn">8</orbis>
+		<orbis id="Venus-Mars">7</orbis>
+		<orbis id="Venus-Jupiter">8</orbis>
+		<orbis id="Venus-Saturn">8</orbis>
+		<orbis id="Mars-Jupiter">8</orbis>
+		<orbis id="Mars-Saturn">8</orbis>
+		<orbis id="Jupiter-Saturn">9</orbis>
+		<orbis id="Other">1</orbis>
+		<orbis id="Axis">4</orbis>
+		<orbis id="star m0">1.0</orbis>
+		<orbis id="star m1">0.5</orbis>
+		<orbis id="star m2">0.25</orbis>
+		<orbis id="star m3">0.12</orbis>
+		<orbis id="star m4">0.12</orbis>
+		<orbis id="star m5">0.12</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#006600</color>
+		<color part="0.85">#33CC00</color>
+		<color part="1.0">#66FF99</color>
+	    </lon>
+	    <lon>
+		[font color=red]60[/font]
+		<angle>60.0</angle>
+		<view>true</view>
+		<orbis id="Sun-Moon">13.5</orbis>
+		<orbis id="Sun-Mercury">11</orbis>
+		<orbis id="Sun-Venus">11</orbis>
+		<orbis id="Sun-Mars">11</orbis>
+		<orbis id="Sun-Jupiter">12</orbis>
+		<orbis id="Sun-Saturn">12</orbis>
+		<orbis id="Moon-Mercury">9.5</orbis>
+		<orbis id="Moon-Venus">9.5</orbis>
+		<orbis id="Moon-Mars">9.5</orbis>
+		<orbis id="Moon-Jupiter">10.5</orbis>
+		<orbis id="Moon-Saturn">10.5</orbis>
+		<orbis id="Mercury-Venus">7</orbis>
+		<orbis id="Mercury-Mars">7</orbis>
+		<orbis id="Mercury-Jupiter">8</orbis>
+		<orbis id="Mercury-Saturn">8</orbis>
+		<orbis id="Venus-Mars">7</orbis>
+		<orbis id="Venus-Jupiter">8</orbis>
+		<orbis id="Venus-Saturn">8</orbis>
+		<orbis id="Mars-Jupiter">8</orbis>
+		<orbis id="Mars-Saturn">8</orbis>
+		<orbis id="Jupiter-Saturn">9</orbis>
+		<orbis id="Other">1</orbis>
+		<orbis id="Axis">4</orbis>
+		<orbis id="star m0">1.0</orbis>
+		<orbis id="star m1">0.5</orbis>
+		<orbis id="star m2">0.25</orbis>
+		<orbis id="star m3">0.12</orbis>
+		<orbis id="star m4">0.12</orbis>
+		<orbis id="star m5">0.12</orbis>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    <lon>
+		[font color=black]90[/font]
+		<angle>90.0</angle>
+		<view>true</view>
+		<orbis id="Sun-Moon">13.5</orbis>
+		<orbis id="Sun-Mercury">11</orbis>
+		<orbis id="Sun-Venus">11</orbis>
+		<orbis id="Sun-Mars">11</orbis>
+		<orbis id="Sun-Jupiter">12</orbis>
+		<orbis id="Sun-Saturn">12</orbis>
+		<orbis id="Moon-Mercury">9.5</orbis>
+		<orbis id="Moon-Venus">9.5</orbis>
+		<orbis id="Moon-Mars">9.5</orbis>
+		<orbis id="Moon-Jupiter">10.5</orbis>
+		<orbis id="Moon-Saturn">10.5</orbis>
+		<orbis id="Mercury-Venus">7</orbis>
+		<orbis id="Mercury-Mars">7</orbis>
+		<orbis id="Mercury-Jupiter">8</orbis>
+		<orbis id="Mercury-Saturn">8</orbis>
+		<orbis id="Venus-Mars">7</orbis>
+		<orbis id="Venus-Jupiter">8</orbis>
+		<orbis id="Venus-Saturn">8</orbis>
+		<orbis id="Mars-Jupiter">8</orbis>
+		<orbis id="Mars-Saturn">8</orbis>
+		<orbis id="Jupiter-Saturn">9</orbis>
+		<orbis id="Other">1</orbis>
+		<orbis id="Axis">4</orbis>
+		<orbis id="star m0">1.0</orbis>
+		<orbis id="star m1">0.5</orbis>
+		<orbis id="star m2">0.25</orbis>
+		<orbis id="star m3">0.12</orbis>
+		<orbis id="star m4">0.12</orbis>
+		<orbis id="star m5">0.12</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <lon>
+		[font color=red]120[/font]
+		<angle>120.0</angle>
+		<view>true</view>
+		<orbis id="Sun-Moon">13.5</orbis>
+		<orbis id="Sun-Mercury">11</orbis>
+		<orbis id="Sun-Venus">11</orbis>
+		<orbis id="Sun-Mars">11</orbis>
+		<orbis id="Sun-Jupiter">12</orbis>
+		<orbis id="Sun-Saturn">12</orbis>
+		<orbis id="Moon-Mercury">9.5</orbis>
+		<orbis id="Moon-Venus">9.5</orbis>
+		<orbis id="Moon-Mars">9.5</orbis>
+		<orbis id="Moon-Jupiter">10.5</orbis>
+		<orbis id="Moon-Saturn">10.5</orbis>
+		<orbis id="Mercury-Venus">7</orbis>
+		<orbis id="Mercury-Mars">7</orbis>
+		<orbis id="Mercury-Jupiter">8</orbis>
+		<orbis id="Mercury-Saturn">8</orbis>
+		<orbis id="Venus-Mars">7</orbis>
+		<orbis id="Venus-Jupiter">8</orbis>
+		<orbis id="Venus-Saturn">8</orbis>
+		<orbis id="Mars-Jupiter">8</orbis>
+		<orbis id="Mars-Saturn">8</orbis>
+		<orbis id="Jupiter-Saturn">9</orbis>
+		<orbis id="Other">1</orbis>
+		<orbis id="Axis">4</orbis>
+		<orbis id="star m0">1.0</orbis>
+		<orbis id="star m1">0.5</orbis>
+		<orbis id="star m2">0.25</orbis>
+		<orbis id="star m3">0.12</orbis>
+		<orbis id="star m4">0.12</orbis>
+		<orbis id="star m5">0.12</orbis>
+		<line_style>solid</line_style>
+		<color part="0.15">#990000</color>
+		<color part="0.85">#FF0000</color>
+		<color part="1.0">#FF6666</color>
+	    </lon>
+	    <lon>
+		[font color=black]180[/font]
+		<angle>180.0</angle>
+		<view>true</view>
+		<line_style>solid</line_style>
+		<orbis id="Sun-Moon">13.5</orbis>
+		<orbis id="Sun-Mercury">11</orbis>
+		<orbis id="Sun-Venus">11</orbis>
+		<orbis id="Sun-Mars">11</orbis>
+		<orbis id="Sun-Jupiter">12</orbis>
+		<orbis id="Sun-Saturn">12</orbis>
+		<orbis id="Moon-Mercury">9.5</orbis>
+		<orbis id="Moon-Venus">9.5</orbis>
+		<orbis id="Moon-Mars">9.5</orbis>
+		<orbis id="Moon-Jupiter">10.5</orbis>
+		<orbis id="Moon-Saturn">10.5</orbis>
+		<orbis id="Mercury-Venus">7</orbis>
+		<orbis id="Mercury-Mars">7</orbis>
+		<orbis id="Mercury-Jupiter">8</orbis>
+		<orbis id="Mercury-Saturn">8</orbis>
+		<orbis id="Venus-Mars">7</orbis>
+		<orbis id="Venus-Jupiter">8</orbis>
+		<orbis id="Venus-Saturn">8</orbis>
+		<orbis id="Mars-Jupiter">8</orbis>
+		<orbis id="Mars-Saturn">8</orbis>
+		<orbis id="Jupiter-Saturn">9</orbis>
+		<orbis id="Other">1</orbis>
+		<orbis id="Axis">4</orbis>
+		<orbis id="star m0">1.0</orbis>
+		<orbis id="star m1">0.5</orbis>
+		<orbis id="star m2">0.25</orbis>
+		<orbis id="star m3">0.12</orbis>
+		<orbis id="star m4">0.12</orbis>
+		<orbis id="star m5">0.12</orbis>
+		<color part="0.15">#000000</color>
+		<color part="0.85">#999999</color>
+		<color part="1.0">#CCCCCC</color>
+	    </lon>
+	    <exclude>
+		<point name="NNode">
+		    <point name="SNode"/>
+		</point>
+		<point category="star/m0">
+		    <point category="star/m0"/>
+		    <point category="star/m1"/>
+		    <point category="star/m2"/>
+		    <point category="star/m3"/>
+		    <point category="star/m4"/>
+		    <point category="star/m5"/>
+		</point>
+		<point category="star/m1">
+		    <point category="star/m1"/>
+		    <point category="star/m2"/>
+		    <point category="star/m3"/>
+		    <point category="star/m4"/>
+		    <point category="star/m5"/>
+		</point>
+		<point category="star/m2">
+		    <point category="star/m2"/>
+		    <point category="star/m3"/>
+		    <point category="star/m4"/>
+		    <point category="star/m5"/>
+		</point>
+		<point category="star/m3">
+		    <point category="star/m3"/>
+		    <point category="star/m4"/>
+		    <point category="star/m5"/>
+		</point>
+		<point category="star/m4">
+		    <point category="star/m4"/>
+		    <point category="star/m5"/>
+		</point>
+		<point category="star/m5">
+		    <point category="star/m5"/>
+		</point>
+	    </exclude>
+	    <orbises>
+		Other
+		<point name="Sun">
+		    <point name="Moon">Sun-Moon</point>
+		    <point name="Mercury">Sun-Mercury</point>
+		    <point name="Venus">Sun-Venus</point>
+		    <point name="Mars">Sun-Mars</point>
+		    <point name="Jupiter">Sun-Jupiter</point>
+		    <point name="Moon">Sun-Saturn</point>
+		</point>
+		
+		<point name="Moon">
+		    <point name="Mercury">Moon-Mercury</point>
+		    <point name="Venus">Moon-Venus</point>
+		    <point name="Mars">Moon-Mars</point>
+		    <point name="Jupiter">Moon-Jupiter</point>
+		    <point name="Saturn">Moon-Saturn</point>
+		</point>
+	
+		<point name="Mercury">
+		    <point name="Venus">Mercury-Venus</point>
+		    <point name="Mars">Mercury-Mars</point>
+		    <point name="Jupiter">Mercury-Jupiter</point>
+		    <point name="Saturn">Mercury-Saturn</point>
+		</point>
+		
+		<point name="Venus">
+		    <point name="Mars">Venus-Mars</point>
+		    <point name="Jupiter">Venus-Jupiter</point>
+		    <point name="Saturn">Venus-Saturn</point>
+		</point>
+
+		<point name="Mars">
+		    <point name="Jupiter">Mars-Jupiter</point>
+		    <point name="Saturn">Mars-Saturn</point>
+		</point>
+	
+		<point name="Jupiter">
+		    <point name="Saturn">Jupiter-Saturn</point>
+		</point>
+		
+		<point category="axis">Axis</point>
+
+		<point category="star/m0">star m0</point>
+		<point category="star/m1">star m1</point>
+		<point category="star/m2">star m2</point>
+		<point category="star/m3">star m3</point>
+		<point category="star/m4">star m4</point>
+		<point category="star/m5">star m5</point>
+	    </orbises>
+	</eqliptic>
+    </aspects>
+</astrozaur>

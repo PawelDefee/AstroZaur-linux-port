@@ -9,11 +9,14 @@ set -o errexit
 # Create output directory
 mkdir -p build
 
-# Build Lua 5.1.5
+# Patch and build Lua 5.1.5
 tar xvf download/lua-5.1.5.tar.gz -C build
-pushd build/lua-5.1.5
+pushd build
+patch -p0 < ../patches/lua-5.1.5.patch
+pushd lua-5.1.5
 make linux
 $USE_SUDO_INSTALL make linux install
+popd
 popd
 
 # Patch and build Lua File System

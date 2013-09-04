@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <points>
+	<point name="Jupiter H18" type="lua">
+	    <lua>
+		<load>data/lua/point.lua</load>
+		<chunk when="CALC">return harmonic(..., "Jupiter", 18)</chunk>
+	    </lua>
+	    <color>#0000FF</color>
+	    <bitmap>data/pixmaps/jupiter.gif</bitmap>
+	    <category>harmonic</category>
+	</point>
+    </points>
+</astrozaur>

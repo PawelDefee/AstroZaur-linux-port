@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <chart type="natal">
+	<info>Marilyn Monroe</info>
+	<date>1/06/1926</date>
+	<time>17:30:00</time>
+	<file>data/place/los_angeles.xml</file>
+	<rotate_sec>60</rotate_sec>
+    </chart>
+</astrozaur>

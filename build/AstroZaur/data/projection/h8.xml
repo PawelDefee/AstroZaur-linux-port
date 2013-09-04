@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <projection type="dial">
+	<direction>CW</direction>
+	<width>23</width>
+	<color>#D0EFFF</color>
+	<size>45</size>
+	<step>1</step>
+	<font_size>10</font_size>
+    </projection>
+</astrozaur>

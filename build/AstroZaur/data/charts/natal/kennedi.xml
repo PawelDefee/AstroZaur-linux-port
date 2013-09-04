@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <chart type="natal">
+	<info>J.F.Kennedi</info>
+	<date>29/05/1917</date>
+	<time>8:15:00</time>
+	<file>data/place/brooklyn.xml</file>
+	<rotate_sec>60</rotate_sec>
+    </chart>
+</astrozaur>

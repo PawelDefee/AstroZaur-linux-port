@@ -77,3 +77,9 @@ Original patches in the Linux port
 	that corrects the following defects:
 	* Compilation errors when client Lua runtime is statically linked with the executable
 
+* The Lua patch at:
+
+			./patches/lua-5.1.5.patch
+
+	that corrects the following defects:
+	* Modified compilation to generate position independent code.

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <aspects>
+	<reception>
+	    <division>Ruling day</division>
+	    <division>Ruling night</division>
+	    <division>Exalted</division>
+	    <division>Fas</division>
+	    <division>Term</division>
+	    <division>Triplicitet day</division>
+	    <division>Triplicitet night</division>
+	    <both>
+		<line>
+		    <style>solid</style>
+		    <width>2</width>
+		    <color>#FF99FF</color>
+		</line>
+	    </both>
+	    <exclude>
+		<point name="NNode">
+		    <point name="SNode"/>
+		</point>
+		<point category="axis"/>
+		<point category="house"/>
+		<point category="star/m0"/>
+		<point category="star/m1"/>
+		<point category="star/m2"/>
+		<point category="star/m3"/>
+		<point category="star/m4"/>
+		<point category="star/m5"/>
+	    </exclude>
+	</reception>
+    </aspects>
+</astrozaur>

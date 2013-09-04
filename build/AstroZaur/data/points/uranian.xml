@@ -1,0 +1,2018 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <points>
+        <info>false</info>
+        <view>false</view>
+        <aspect>false</aspect>
+
+	<point name="I"/>
+	<point name="II"/>
+	<point name="III"/>
+	<point name="IV"/>
+	<point name="V"/>
+	<point name="VI"/>
+	<point name="VII"/>
+	<point name="VIII"/>
+	<point name="IX"/>
+	<point name="X"/>
+	<point name="XI"/>
+	<point name="XII"/>
+	<point name="Selena"/>
+	<point name="Lilith"/>
+	<point name="Chiron"/>
+
+        <info>true</info>
+        <view>true</view>
+        <aspected>true</aspected>
+        <aspecting>false</aspecting>
+	
+	<point name="Sun"/>
+	<point name="Moon"/>
+	<point name="Mercury"/>
+	<point name="Venus"/>
+	<point name="Mars"/>
+	<point name="Jupiter"/>
+	<point name="Saturn"/>
+	<point name="Uranus"/>
+	<point name="Neptune"/>
+	<point name="Pluto"/>
+	<point name="NNode"/>
+	<point name="SNode"/>
+	
+	<point name="Cupido" type="swiss">
+	    <id>40</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.003787
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/cupido.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Hades" type="swiss">
+	    <id>41</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.002783
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/hades.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Zeus" type="swiss">
+	    <id>42</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.00219
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/zeus.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Kronos" type="swiss">
+	    <id>43</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.001916
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/kronos.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Apollon" type="swiss">
+	    <id>44</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.001779
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/apollon.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Adametos" type="swiss">
+	    <id>45</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.001597
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/adametos.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Vulkanus" type="swiss">
+	    <id>46</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.001505
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/vulkanus.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Poseidon" type="swiss">
+	    <id>47</id>
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0.001277
+		    self.dotsize = pref.dotsize
+		</chunk>
+	    </lua>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/poseidon.gif</bitmap>
+	    <category>uranian</category>
+	</point>
+
+	<point name="Ar" type="lua">
+	    <lua>
+		<chunk when="INIT">
+		    local self = ...
+		    self.avr_speed = 0
+		    self.dotsize = pref.dotsize
+		</chunk>
+
+		<chunk when="CALC">return 0, 0, 0</chunk>
+	    </lua>
+	    <persist/>
+	    <color>#000000</color>
+	    <bitmap>data/pixmaps/aries.gif</bitmap>
+	    <category>axis</category>
+	</point>
+
+	<point name="SU/MO" type="midpoint">
+		<point>Sun</point>
+		<point>Moon</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/ME" type="midpoint">
+		<point>Sun</point>
+		<point>Mercury</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/VE" type="midpoint">
+		<point>Sun</point>
+		<point>Venus</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/MA" type="midpoint">
+		<point>Sun</point>
+		<point>Mars</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/JU" type="midpoint">
+		<point>Sun</point>
+		<point>Jupiter</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/SA" type="midpoint">
+		<point>Sun</point>
+		<point>Saturn</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/UR" type="midpoint">
+		<point>Sun</point>
+		<point>Uranus</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/NE" type="midpoint">
+		<point>Sun</point>
+		<point>Neptune</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/PL" type="midpoint">
+		<point>Sun</point>
+		<point>Pluto</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/NN" type="midpoint">
+		<point>Sun</point>
+		<point>NNode</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/CU" type="midpoint">
+		<point>Sun</point>
+		<point>Cupido</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/HA" type="midpoint">
+		<point>Sun</point>
+		<point>Hades</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/ZE" type="midpoint">
+		<point>Sun</point>
+		<point>Zeus</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/KR" type="midpoint">
+		<point>Sun</point>
+		<point>Kronos</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/AP" type="midpoint">
+		<point>Sun</point>
+		<point>Apollon</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/AD" type="midpoint">
+		<point>Sun</point>
+		<point>Adametos</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/VU" type="midpoint">
+		<point>Sun</point>
+		<point>Vulkanus</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/PO" type="midpoint">
+		<point>Sun</point>
+		<point>Poseidon</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/AS" type="midpoint">
+		<point>Sun</point>
+		<point>Asc</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/MC" type="midpoint">
+		<point>Sun</point>
+		<point>Mc</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SU/AR" type="midpoint">
+		<point>Sun</point>
+		<point>Ar</point>
+		<color>#FF5000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/ME" type="midpoint">
+		<point>Moon</point>
+		<point>Mercury</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/VE" type="midpoint">
+		<point>Moon</point>
+		<point>Venus</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/MA" type="midpoint">
+		<point>Moon</point>
+		<point>Mars</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/JU" type="midpoint">
+		<point>Moon</point>
+		<point>Jupiter</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/SA" type="midpoint">
+		<point>Moon</point>
+		<point>Saturn</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/UR" type="midpoint">
+		<point>Moon</point>
+		<point>Uranus</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/NE" type="midpoint">
+		<point>Moon</point>
+		<point>Neptune</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/PL" type="midpoint">
+		<point>Moon</point>
+		<point>Pluto</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/NN" type="midpoint">
+		<point>Moon</point>
+		<point>NNode</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/CU" type="midpoint">
+		<point>Moon</point>
+		<point>Cupido</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/HA" type="midpoint">
+		<point>Moon</point>
+		<point>Hades</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/ZE" type="midpoint">
+		<point>Moon</point>
+		<point>Zeus</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/KR" type="midpoint">
+		<point>Moon</point>
+		<point>Kronos</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/AP" type="midpoint">
+		<point>Moon</point>
+		<point>Apollon</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/AD" type="midpoint">
+		<point>Moon</point>
+		<point>Adametos</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/VU" type="midpoint">
+		<point>Moon</point>
+		<point>Vulkanus</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/PO" type="midpoint">
+		<point>Moon</point>
+		<point>Poseidon</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/AS" type="midpoint">
+		<point>Moon</point>
+		<point>Asc</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/MC" type="midpoint">
+		<point>Moon</point>
+		<point>Mc</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MO/AR" type="midpoint">
+		<point>Moon</point>
+		<point>Ar</point>
+		<color>#008000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/VE" type="midpoint">
+		<point>Mercury</point>
+		<point>Venus</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/MA" type="midpoint">
+		<point>Mercury</point>
+		<point>Mars</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/JU" type="midpoint">
+		<point>Mercury</point>
+		<point>Jupiter</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/SA" type="midpoint">
+		<point>Mercury</point>
+		<point>Saturn</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/UR" type="midpoint">
+		<point>Mercury</point>
+		<point>Uranus</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/NE" type="midpoint">
+		<point>Mercury</point>
+		<point>Neptune</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/PL" type="midpoint">
+		<point>Mercury</point>
+		<point>Pluto</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/NN" type="midpoint">
+		<point>Mercury</point>
+		<point>NNode</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/CU" type="midpoint">
+		<point>Mercury</point>
+		<point>Cupido</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/HA" type="midpoint">
+		<point>Mercury</point>
+		<point>Hades</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/ZE" type="midpoint">
+		<point>Mercury</point>
+		<point>Zeus</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/KR" type="midpoint">
+		<point>Mercury</point>
+		<point>Kronos</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/AP" type="midpoint">
+		<point>Mercury</point>
+		<point>Apollon</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/AD" type="midpoint">
+		<point>Mercury</point>
+		<point>Adametos</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/VU" type="midpoint">
+		<point>Mercury</point>
+		<point>Vulkanus</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/PO" type="midpoint">
+		<point>Mercury</point>
+		<point>Poseidon</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/AS" type="midpoint">
+		<point>Mercury</point>
+		<point>Asc</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/MC" type="midpoint">
+		<point>Mercury</point>
+		<point>Mc</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ME/AR" type="midpoint">
+		<point>Mercury</point>
+		<point>Ar</point>
+		<color>#00A0A0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/MA" type="midpoint">
+		<point>Venus</point>
+		<point>Mars</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/JU" type="midpoint">
+		<point>Venus</point>
+		<point>Jupiter</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/SA" type="midpoint">
+		<point>Venus</point>
+		<point>Saturn</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/UR" type="midpoint">
+		<point>Venus</point>
+		<point>Uranus</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/NE" type="midpoint">
+		<point>Venus</point>
+		<point>Neptune</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/PL" type="midpoint">
+		<point>Venus</point>
+		<point>Pluto</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/NN" type="midpoint">
+		<point>Venus</point>
+		<point>NNode</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/CU" type="midpoint">
+		<point>Venus</point>
+		<point>Cupido</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/HA" type="midpoint">
+		<point>Venus</point>
+		<point>Hades</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/ZE" type="midpoint">
+		<point>Venus</point>
+		<point>Zeus</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/KR" type="midpoint">
+		<point>Venus</point>
+		<point>Kronos</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/AP" type="midpoint">
+		<point>Venus</point>
+		<point>Apollon</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/AD" type="midpoint">
+		<point>Venus</point>
+		<point>Adametos</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/VU" type="midpoint">
+		<point>Venus</point>
+		<point>Vulkanus</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/PO" type="midpoint">
+		<point>Venus</point>
+		<point>Poseidon</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/AS" type="midpoint">
+		<point>Venus</point>
+		<point>Asc</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/MC" type="midpoint">
+		<point>Venus</point>
+		<point>Mc</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VE/AR" type="midpoint">
+		<point>Venus</point>
+		<point>Ar</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/JU" type="midpoint">
+		<point>Mars</point>
+		<point>Jupiter</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/SA" type="midpoint">
+		<point>Mars</point>
+		<point>Saturn</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/UR" type="midpoint">
+		<point>Mars</point>
+		<point>Uranus</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/NE" type="midpoint">
+		<point>Mars</point>
+		<point>Neptune</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/PL" type="midpoint">
+		<point>Mars</point>
+		<point>Pluto</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/NN" type="midpoint">
+		<point>Mars</point>
+		<point>NNode</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/CU" type="midpoint">
+		<point>Mars</point>
+		<point>Cupido</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/HA" type="midpoint">
+		<point>Mars</point>
+		<point>Hades</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/ZE" type="midpoint">
+		<point>Mars</point>
+		<point>Zeus</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/KR" type="midpoint">
+		<point>Mars</point>
+		<point>Kronos</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/AP" type="midpoint">
+		<point>Mars</point>
+		<point>Apollon</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/AD" type="midpoint">
+		<point>Mars</point>
+		<point>Adametos</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/VU" type="midpoint">
+		<point>Mars</point>
+		<point>Vulkanus</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/PO" type="midpoint">
+		<point>Mars</point>
+		<point>Poseidon</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/AS" type="midpoint">
+		<point>Mars</point>
+		<point>Asc</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/MC" type="midpoint">
+		<point>Mars</point>
+		<point>Mc</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MA/AR" type="midpoint">
+		<point>Mars</point>
+		<point>Ar</point>
+		<color>#FF0000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/SA" type="midpoint">
+		<point>Jupiter</point>
+		<point>Saturn</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/UR" type="midpoint">
+		<point>Jupiter</point>
+		<point>Uranus</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/NE" type="midpoint">
+		<point>Jupiter</point>
+		<point>Neptune</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/PL" type="midpoint">
+		<point>Jupiter</point>
+		<point>Pluto</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/NN" type="midpoint">
+		<point>Jupiter</point>
+		<point>NNode</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/CU" type="midpoint">
+		<point>Jupiter</point>
+		<point>Cupido</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/HA" type="midpoint">
+		<point>Jupiter</point>
+		<point>Hades</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/ZE" type="midpoint">
+		<point>Jupiter</point>
+		<point>Zeus</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/KR" type="midpoint">
+		<point>Jupiter</point>
+		<point>Kronos</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/AP" type="midpoint">
+		<point>Jupiter</point>
+		<point>Apollon</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/AD" type="midpoint">
+		<point>Jupiter</point>
+		<point>Adametos</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/VU" type="midpoint">
+		<point>Jupiter</point>
+		<point>Vulkanus</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/PO" type="midpoint">
+		<point>Jupiter</point>
+		<point>Poseidon</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/AS" type="midpoint">
+		<point>Jupiter</point>
+		<point>Asc</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/MC" type="midpoint">
+		<point>Jupiter</point>
+		<point>Mc</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="JU/AR" type="midpoint">
+		<point>Jupiter</point>
+		<point>Ar</point>
+		<color>#0000FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/UR" type="midpoint">
+		<point>Saturn</point>
+		<point>Uranus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/NE" type="midpoint">
+		<point>Saturn</point>
+		<point>Neptune</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/PL" type="midpoint">
+		<point>Saturn</point>
+		<point>Pluto</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/NN" type="midpoint">
+		<point>Saturn</point>
+		<point>NNode</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/CU" type="midpoint">
+		<point>Saturn</point>
+		<point>Cupido</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/HA" type="midpoint">
+		<point>Saturn</point>
+		<point>Hades</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/ZE" type="midpoint">
+		<point>Saturn</point>
+		<point>Zeus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/KR" type="midpoint">
+		<point>Saturn</point>
+		<point>Kronos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/AP" type="midpoint">
+		<point>Saturn</point>
+		<point>Apollon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/AD" type="midpoint">
+		<point>Saturn</point>
+		<point>Adametos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/VU" type="midpoint">
+		<point>Saturn</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/PO" type="midpoint">
+		<point>Saturn</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/AS" type="midpoint">
+		<point>Saturn</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/MC" type="midpoint">
+		<point>Saturn</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="SA/AR" type="midpoint">
+		<point>Saturn</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/NE" type="midpoint">
+		<point>Uranus</point>
+		<point>Neptune</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/PL" type="midpoint">
+		<point>Uranus</point>
+		<point>Pluto</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/NN" type="midpoint">
+		<point>Uranus</point>
+		<point>NNode</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/CU" type="midpoint">
+		<point>Uranus</point>
+		<point>Cupido</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/HA" type="midpoint">
+		<point>Uranus</point>
+		<point>Hades</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/ZE" type="midpoint">
+		<point>Uranus</point>
+		<point>Zeus</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/KR" type="midpoint">
+		<point>Uranus</point>
+		<point>Kronos</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/AP" type="midpoint">
+		<point>Uranus</point>
+		<point>Apollon</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/AD" type="midpoint">
+		<point>Uranus</point>
+		<point>Adametos</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/VU" type="midpoint">
+		<point>Uranus</point>
+		<point>Vulkanus</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/PO" type="midpoint">
+		<point>Uranus</point>
+		<point>Poseidon</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/AS" type="midpoint">
+		<point>Uranus</point>
+		<point>Asc</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/MC" type="midpoint">
+		<point>Uranus</point>
+		<point>Mc</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="UR/AR" type="midpoint">
+		<point>Uranus</point>
+		<point>Ar</point>
+		<color>#0080FF</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/PL" type="midpoint">
+		<point>Neptune</point>
+		<point>Pluto</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/NN" type="midpoint">
+		<point>Neptune</point>
+		<point>NNode</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/CU" type="midpoint">
+		<point>Neptune</point>
+		<point>Cupido</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/HA" type="midpoint">
+		<point>Neptune</point>
+		<point>Hades</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/ZE" type="midpoint">
+		<point>Neptune</point>
+		<point>Zeus</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/KR" type="midpoint">
+		<point>Neptune</point>
+		<point>Kronos</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/AP" type="midpoint">
+		<point>Neptune</point>
+		<point>Apollon</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/AD" type="midpoint">
+		<point>Neptune</point>
+		<point>Adametos</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/VU" type="midpoint">
+		<point>Neptune</point>
+		<point>Vulkanus</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/PO" type="midpoint">
+		<point>Neptune</point>
+		<point>Poseidon</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/AS" type="midpoint">
+		<point>Neptune</point>
+		<point>Asc</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/MC" type="midpoint">
+		<point>Neptune</point>
+		<point>Mc</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NE/AR" type="midpoint">
+		<point>Neptune</point>
+		<point>Ar</point>
+		<color>#0000C0</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/NN" type="midpoint">
+		<point>Pluto</point>
+		<point>NNode</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/CU" type="midpoint">
+		<point>Pluto</point>
+		<point>Cupido</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/HA" type="midpoint">
+		<point>Pluto</point>
+		<point>Hades</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/ZE" type="midpoint">
+		<point>Pluto</point>
+		<point>Zeus</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/KR" type="midpoint">
+		<point>Pluto</point>
+		<point>Kronos</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/AP" type="midpoint">
+		<point>Pluto</point>
+		<point>Apollon</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/AD" type="midpoint">
+		<point>Pluto</point>
+		<point>Adametos</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/VU" type="midpoint">
+		<point>Pluto</point>
+		<point>Vulkanus</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/PO" type="midpoint">
+		<point>Pluto</point>
+		<point>Poseidon</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/AS" type="midpoint">
+		<point>Pluto</point>
+		<point>Asc</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/MC" type="midpoint">
+		<point>Pluto</point>
+		<point>Mc</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PL/AR" type="midpoint">
+		<point>Pluto</point>
+		<point>Ar</point>
+		<color>#C00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/CU" type="midpoint">
+		<point>NNode</point>
+		<point>Cupido</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/HA" type="midpoint">
+		<point>NNode</point>
+		<point>Hades</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/ZE" type="midpoint">
+		<point>NNode</point>
+		<point>Zeus</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/KR" type="midpoint">
+		<point>NNode</point>
+		<point>Kronos</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/AP" type="midpoint">
+		<point>NNode</point>
+		<point>Apollon</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/AD" type="midpoint">
+		<point>NNode</point>
+		<point>Adametos</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/VU" type="midpoint">
+		<point>NNode</point>
+		<point>Vulkanus</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/PO" type="midpoint">
+		<point>NNode</point>
+		<point>Poseidon</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/AS" type="midpoint">
+		<point>NNode</point>
+		<point>Asc</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/MC" type="midpoint">
+		<point>NNode</point>
+		<point>Mc</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="NN/AR" type="midpoint">
+		<point>NNode</point>
+		<point>Ar</point>
+		<color>#808080</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/HA" type="midpoint">
+		<point>Cupido</point>
+		<point>Hades</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/ZE" type="midpoint">
+		<point>Cupido</point>
+		<point>Zeus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/KR" type="midpoint">
+		<point>Cupido</point>
+		<point>Kronos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/AP" type="midpoint">
+		<point>Cupido</point>
+		<point>Apollon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/AD" type="midpoint">
+		<point>Cupido</point>
+		<point>Adametos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/VU" type="midpoint">
+		<point>Cupido</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/PO" type="midpoint">
+		<point>Cupido</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/AS" type="midpoint">
+		<point>Cupido</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/MC" type="midpoint">
+		<point>Cupido</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="CU/AR" type="midpoint">
+		<point>Cupido</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/ZE" type="midpoint">
+		<point>Hades</point>
+		<point>Zeus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/KR" type="midpoint">
+		<point>Hades</point>
+		<point>Kronos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/AP" type="midpoint">
+		<point>Hades</point>
+		<point>Apollon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/AD" type="midpoint">
+		<point>Hades</point>
+		<point>Adametos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/VU" type="midpoint">
+		<point>Hades</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/PO" type="midpoint">
+		<point>Hades</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/AS" type="midpoint">
+		<point>Hades</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/MC" type="midpoint">
+		<point>Hades</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="HA/AR" type="midpoint">
+		<point>Hades</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/KR" type="midpoint">
+		<point>Zeus</point>
+		<point>Kronos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/AP" type="midpoint">
+		<point>Zeus</point>
+		<point>Apollon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/AD" type="midpoint">
+		<point>Zeus</point>
+		<point>Adametos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/VU" type="midpoint">
+		<point>Zeus</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/PO" type="midpoint">
+		<point>Zeus</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/AS" type="midpoint">
+		<point>Zeus</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/MC" type="midpoint">
+		<point>Zeus</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="ZE/AR" type="midpoint">
+		<point>Zeus</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/AP" type="midpoint">
+		<point>Kronos</point>
+		<point>Apollon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/AD" type="midpoint">
+		<point>Kronos</point>
+		<point>Adametos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/VU" type="midpoint">
+		<point>Kronos</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/PO" type="midpoint">
+		<point>Kronos</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/AS" type="midpoint">
+		<point>Kronos</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/MC" type="midpoint">
+		<point>Kronos</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="KR/AR" type="midpoint">
+		<point>Kronos</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AP/AD" type="midpoint">
+		<point>Apollon</point>
+		<point>Adametos</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AP/VU" type="midpoint">
+		<point>Apollon</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AP/PO" type="midpoint">
+		<point>Apollon</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AP/AS" type="midpoint">
+		<point>Apollon</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AP/MC" type="midpoint">
+		<point>Apollon</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AP/AR" type="midpoint">
+		<point>Apollon</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AD/VU" type="midpoint">
+		<point>Adametos</point>
+		<point>Vulkanus</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AD/PO" type="midpoint">
+		<point>Adametos</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AD/AS" type="midpoint">
+		<point>Adametos</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AD/MC" type="midpoint">
+		<point>Adametos</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AD/AR" type="midpoint">
+		<point>Adametos</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VU/PO" type="midpoint">
+		<point>Vulkanus</point>
+		<point>Poseidon</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VU/AS" type="midpoint">
+		<point>Vulkanus</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VU/MC" type="midpoint">
+		<point>Vulkanus</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="VU/AR" type="midpoint">
+		<point>Vulkanus</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PO/AS" type="midpoint">
+		<point>Poseidon</point>
+		<point>Asc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PO/MC" type="midpoint">
+		<point>Poseidon</point>
+		<point>Mc</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="PO/AR" type="midpoint">
+		<point>Poseidon</point>
+		<point>Ar</point>
+		<color>#000000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AS/MC" type="midpoint">
+		<point>Asc</point>
+		<point>Mc</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="AS/AR" type="midpoint">
+		<point>Asc</point>
+		<point>Ar</point>
+		<color>#00B000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+
+	<point name="MC/AR" type="midpoint">
+		<point>Mc</point>
+		<point>Ar</point>
+		<color>#B00000</color>
+		<line><style>solid</style><color>#FF00FF</color></line>
+		<category>midpoint</category>
+	</point>
+    </points>
+</astrozaur>

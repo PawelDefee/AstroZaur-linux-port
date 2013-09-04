@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<astrozaur>
+    <chart type="natal">
+	<info>Natal</info>
+	<id>natal</id>
+	<date>Now</date>
+	<time>Now</time>
+	<rotate_sec>60</rotate_sec>
+
+	<file>data/points/uranian.xml</file>
+    </chart>
+
+    <file>data/aspects/uranian.xml</file>
+    <active_chart name="id:natal"/>
+    <aspect_chart name="id:natal"/>
+    <start_chart name="id:natal" point="Asc"/>
+</astrozaur>

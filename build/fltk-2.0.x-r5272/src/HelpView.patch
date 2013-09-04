@@ -1,0 +1,72 @@
+--- HelpView.cxx.orig	2006-06-14 11:43:46.000000000 +0400
++++ HelpView.cxx	2006-08-11 00:47:29.000000000 +0400
+@@ -61,6 +61,7 @@
+ #include <fltk/draw.h>
+ #include <fltk/events.h>
+ #include <fltk/Cursor.h>
++#include <fltk/damage.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <fltk/string.h>
+@@ -370,6 +371,11 @@
+   box(b);
+   draw_box(Rectangle(0, 0, ww, hh));
+ 
++  if (damage() & (fltk::DAMAGE_ALL | fltk::DAMAGE_CHILD)) {
++    hscrollbar_->set_damage(fltk::DAMAGE_ALL);
++    scrollbar_->set_damage(fltk::DAMAGE_ALL);
++  }
++
+   if (hscrollbar_->visible()) {
+     update_child (*hscrollbar_);
+     hh -= 17;
+@@ -380,6 +386,7 @@
+     ww -= 17;
+     i ++;
+   }
++
+   if (i == 2) {
+     setcolor (GRAY50);
+     fillrect(
+@@ -2733,14 +2740,15 @@
+   Box *		b = box() ? box() : DOWN_BOX;
+ 					// Box to draw...
+ 
+-
+-
+   Widget::resize(xx, yy, ww, hh);
+ 
+-    scrollbar_->resize(w() - 17 - fltk::box_dw(b) + fltk::box_dx(b), fltk::box_dy(b),
+-                    17, h() - 17 - fltk::box_dh(b));
+-    hscrollbar_->resize(fltk::box_dx(b), h() - 17 - fltk::box_dh(b) + fltk::box_dy(b),
+-                     w() - 17 - fltk::box_dw(b), 17);
++  scrollbar_->resize(
++    w() - 17 - fltk::box_dw(b) + fltk::box_dx(b), fltk::box_dy(b),
++    17, h() - 17 - fltk::box_dh(b));
++    
++  hscrollbar_->resize(
++    fltk::box_dx(b), h() - 17 - fltk::box_dh(b) + fltk::box_dy(b),
++    w() - 17 - fltk::box_dw(b), 17);
+   
+   format();
+ }
+@@ -2749,6 +2757,19 @@
+ void 
+ HelpView::layout() {
+     Group::layout();
++
++  Box *		b = box() ? box() : DOWN_BOX;
++
++					// Box to draw...
++  scrollbar_->resize(
++    w() - 17 - fltk::box_dw(b) + fltk::box_dx(b), fltk::box_dy(b),
++    17, h() - 17 - fltk::box_dh(b));
++    
++  hscrollbar_->resize(
++    fltk::box_dx(b), h() - 17 - fltk::box_dh(b) + fltk::box_dy(b),
++    w() - 17 - fltk::box_dw(b), 17);
++
++  format();
+ }
+ 
+ 
