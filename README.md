@@ -18,7 +18,7 @@ The resulting application binary can be found at ./build/AstroZaur/astrozaur . I
 Sourced contents of the Linux port
 ----------------------------------
 
-Note: other libraries (such as libxml, ncurses, libreadline-dev, libx11-dev, libxi-dev etc) may be needed to compile this software. This repository only includes those packages that needed explicit patching or specific versions for a functional port for Linux.
+Note: other libraries (such as libxml2-dev, ncurses, libreadline-dev, libx11-dev, libxi-dev etc) may be needed to compile this software. This repository only includes those packages that needed explicit patching or specific versions for a functional port for Linux.
 
 * The original [AstroZaur] [1] application deployed for Sharp Zaurus PDA:
 	
