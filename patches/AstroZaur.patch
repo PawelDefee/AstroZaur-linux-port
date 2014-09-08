@@ -1,6 +1,6 @@
 diff -rupN AstroZaur/aspect_eql_lon.cpp AstroZaur.patched/aspect_eql_lon.cpp
---- AstroZaur/aspect_eql_lon.cpp	2008-05-18 20:42:34.000000000 +0200
-+++ AstroZaur.patched/aspect_eql_lon.cpp	2013-09-02 15:51:39.707766895 +0200
+--- AstroZaur/aspect_eql_lon.cpp	2008-05-18 21:42:34.000000000 +0300
++++ AstroZaur.patched/aspect_eql_lon.cpp	2014-09-08 10:05:23.551522075 +0300
 @@ -24,6 +24,8 @@
  #include "draw_area.h"
  #include "aspect_eql_lon.h"
@@ -11,8 +11,8 @@ diff -rupN AstroZaur/aspect_eql_lon.cpp AstroZaur.patched/aspect_eql_lon.cpp
  #include <fltk/draw.h>
  #include <fltk/Color.h>
 diff -rupN AstroZaur/aspect_equator.cpp AstroZaur.patched/aspect_equator.cpp
---- AstroZaur/aspect_equator.cpp	2008-05-13 23:43:12.000000000 +0200
-+++ AstroZaur.patched/aspect_equator.cpp	2013-09-02 15:51:39.708772479 +0200
+--- AstroZaur/aspect_equator.cpp	2008-05-14 00:43:12.000000000 +0300
++++ AstroZaur.patched/aspect_equator.cpp	2014-09-08 10:05:23.551522075 +0300
 @@ -24,6 +24,8 @@
  #include "line.h"
  #include "map.h"
@@ -23,8 +23,8 @@ diff -rupN AstroZaur/aspect_equator.cpp AstroZaur.patched/aspect_equator.cpp
  #include <fltk/Color.h>
  #include <fltk/draw.h>
 diff -rupN AstroZaur/aspect_reception.cpp AstroZaur.patched/aspect_reception.cpp
---- AstroZaur/aspect_reception.cpp	2008-05-14 00:41:34.000000000 +0200
-+++ AstroZaur.patched/aspect_reception.cpp	2013-09-02 15:51:39.708772479 +0200
+--- AstroZaur/aspect_reception.cpp	2008-05-14 01:41:34.000000000 +0300
++++ AstroZaur.patched/aspect_reception.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -25,6 +25,8 @@
  #include "map.h"
  #include "utils.h"
@@ -35,8 +35,8 @@ diff -rupN AstroZaur/aspect_reception.cpp AstroZaur.patched/aspect_reception.cpp
  #include <fltk/Color.h>
  #include <fltk/draw.h>
 diff -rupN AstroZaur/aspects.cpp AstroZaur.patched/aspects.cpp
---- AstroZaur/aspects.cpp	2008-05-18 16:11:42.000000000 +0200
-+++ AstroZaur.patched/aspects.cpp	2013-09-02 15:51:39.709804530 +0200
+--- AstroZaur/aspects.cpp	2008-05-18 17:11:42.000000000 +0300
++++ AstroZaur.patched/aspects.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -25,6 +25,8 @@
  #include "aspect_symetric.h"
  #include "map.h"
@@ -47,8 +47,8 @@ diff -rupN AstroZaur/aspects.cpp AstroZaur.patched/aspects.cpp
  // CAspectData
  
 diff -rupN AstroZaur/aspect_symetric.cpp AstroZaur.patched/aspect_symetric.cpp
---- AstroZaur/aspect_symetric.cpp	2008-05-14 00:11:45.000000000 +0200
-+++ AstroZaur.patched/aspect_symetric.cpp	2013-09-02 15:51:39.709804530 +0200
+--- AstroZaur/aspect_symetric.cpp	2008-05-14 01:11:45.000000000 +0300
++++ AstroZaur.patched/aspect_symetric.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -25,6 +25,8 @@
  #include "map.h"
  #include "utils.h"
@@ -59,8 +59,8 @@ diff -rupN AstroZaur/aspect_symetric.cpp AstroZaur.patched/aspect_symetric.cpp
  #include <fltk/Color.h>
  #include <fltk/draw.h>
 diff -rupN AstroZaur/astro.cpp AstroZaur.patched/astro.cpp
---- AstroZaur/astro.cpp	2008-05-13 08:00:13.000000000 +0200
-+++ AstroZaur.patched/astro.cpp	2013-09-02 15:51:39.710804655 +0200
+--- AstroZaur/astro.cpp	2008-05-13 09:00:13.000000000 +0300
++++ AstroZaur.patched/astro.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include "utils.h"
  #include "program.h"
@@ -71,8 +71,8 @@ diff -rupN AstroZaur/astro.cpp AstroZaur.patched/astro.cpp
  CAstro::CAstro() {
      iOwner = NULL;
 diff -rupN AstroZaur/atlas.cpp AstroZaur.patched/atlas.cpp
---- AstroZaur/atlas.cpp	2008-06-04 12:45:03.000000000 +0200
-+++ AstroZaur.patched/atlas.cpp	2013-09-02 15:51:39.711791865 +0200
+--- AstroZaur/atlas.cpp	2008-06-04 13:45:03.000000000 +0300
++++ AstroZaur.patched/atlas.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -24,6 +24,8 @@
  #include "lua.h"
  #include "lua_gui.h"
@@ -83,8 +83,8 @@ diff -rupN AstroZaur/atlas.cpp AstroZaur.patched/atlas.cpp
  CAtlas::CAtlas() {
      iDb = NULL;
 diff -rupN AstroZaur/base_window.cpp AstroZaur.patched/base_window.cpp
---- AstroZaur/base_window.cpp	2008-05-31 14:16:03.000000000 +0200
-+++ AstroZaur.patched/base_window.cpp	2013-09-02 15:51:39.711791865 +0200
+--- AstroZaur/base_window.cpp	2008-05-31 15:16:03.000000000 +0300
++++ AstroZaur.patched/base_window.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -18,6 +18,7 @@
      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
@@ -94,8 +94,8 @@ diff -rupN AstroZaur/base_window.cpp AstroZaur.patched/base_window.cpp
  #include "base_window.h"
  #include "utils.h"
 diff -rupN AstroZaur/data/astrozaur.lua AstroZaur.patched/data/astrozaur.lua
---- AstroZaur/data/astrozaur.lua	2008-06-04 13:39:26.000000000 +0200
-+++ AstroZaur.patched/data/astrozaur.lua	2013-09-02 15:51:39.711791865 +0200
+--- AstroZaur/data/astrozaur.lua	2008-06-04 14:39:26.000000000 +0300
++++ AstroZaur.patched/data/astrozaur.lua	2014-09-08 10:05:23.555522075 +0300
 @@ -11,7 +11,7 @@ require"data/division/term"
  print"=== Welcome to AstroZaur ==="
  
@@ -106,8 +106,8 @@ diff -rupN AstroZaur/data/astrozaur.lua AstroZaur.patched/data/astrozaur.lua
  program.timezones(pref.timezones)
  swe.path(pref.swe)
 diff -rupN AstroZaur/data/text/en.lua AstroZaur.patched/data/text/en.lua
---- AstroZaur/data/text/en.lua	1970-01-01 01:00:00.000000000 +0100
-+++ AstroZaur.patched/data/text/en.lua	2013-09-02 15:51:39.712798756 +0200
+--- AstroZaur/data/text/en.lua	1970-01-01 02:00:00.000000000 +0200
++++ AstroZaur.patched/data/text/en.lua	2014-09-08 10:05:23.555522075 +0300
 @@ -0,0 +1,5 @@
 +pref.help = "data/text/ru/help.html"
 +pref.about = "data/text/ru/about.html"
@@ -115,8 +115,8 @@ diff -rupN AstroZaur/data/text/en.lua AstroZaur.patched/data/text/en.lua
 +program.msg = {
 +}
 diff -rupN AstroZaur/date.cpp AstroZaur.patched/date.cpp
---- AstroZaur/date.cpp	2008-05-26 19:27:25.000000000 +0200
-+++ AstroZaur.patched/date.cpp	2013-09-02 15:51:39.713795445 +0200
+--- AstroZaur/date.cpp	2008-05-26 20:27:25.000000000 +0300
++++ AstroZaur.patched/date.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -23,6 +23,8 @@
  #include "lua.h"
  #include "date.h"
@@ -127,8 +127,8 @@ diff -rupN AstroZaur/date.cpp AstroZaur.patched/date.cpp
  #define	JD1970 2440587.5
  
 diff -rupN AstroZaur/division.cpp AstroZaur.patched/division.cpp
---- AstroZaur/division.cpp	2008-03-29 14:43:51.000000000 +0100
-+++ AstroZaur.patched/division.cpp	2013-09-02 15:51:39.713795445 +0200
+--- AstroZaur/division.cpp	2008-03-29 15:43:51.000000000 +0200
++++ AstroZaur.patched/division.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -18,8 +18,11 @@
      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
@@ -142,8 +142,8 @@ diff -rupN AstroZaur/division.cpp AstroZaur.patched/division.cpp
  CDivision::CDivision() {
      iItem = NULL;
 diff -rupN AstroZaur/division.h AstroZaur.patched/division.h
---- AstroZaur/division.h	2008-03-29 14:43:35.000000000 +0100
-+++ AstroZaur.patched/division.h	2013-09-02 15:51:39.714808226 +0200
+--- AstroZaur/division.h	2008-03-29 15:43:35.000000000 +0200
++++ AstroZaur.patched/division.h	2014-09-08 10:05:23.555522075 +0300
 @@ -50,6 +50,7 @@ public:
      void Sort();
  };
@@ -154,8 +154,8 @@ diff -rupN AstroZaur/division.h AstroZaur.patched/division.h
  
  #endif
 diff -rupN AstroZaur/draw_area.cpp AstroZaur.patched/draw_area.cpp
---- AstroZaur/draw_area.cpp	2008-05-12 17:55:53.000000000 +0200
-+++ AstroZaur.patched/draw_area.cpp	2013-09-02 15:51:39.716805794 +0200
+--- AstroZaur/draw_area.cpp	2008-05-12 18:55:53.000000000 +0300
++++ AstroZaur.patched/draw_area.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -23,6 +23,8 @@
  #include "program.h"
  #include "projection.h"
@@ -166,8 +166,8 @@ diff -rupN AstroZaur/draw_area.cpp AstroZaur.patched/draw_area.cpp
  #include <fltk/draw.h>
  #include <fltk/Font.h>
 diff -rupN AstroZaur/line.cpp AstroZaur.patched/line.cpp
---- AstroZaur/line.cpp	2008-05-12 17:57:16.000000000 +0200
-+++ AstroZaur.patched/line.cpp	2013-09-02 15:51:39.716805794 +0200
+--- AstroZaur/line.cpp	2008-05-12 18:57:16.000000000 +0300
++++ AstroZaur.patched/line.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -18,9 +18,12 @@
      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
@@ -182,8 +182,8 @@ diff -rupN AstroZaur/line.cpp AstroZaur.patched/line.cpp
  #include <math.h>
  
 diff -rupN AstroZaur/log.cpp AstroZaur.patched/log.cpp
---- AstroZaur/log.cpp	2008-05-29 09:47:49.000000000 +0200
-+++ AstroZaur.patched/log.cpp	2013-09-02 15:51:39.717783465 +0200
+--- AstroZaur/log.cpp	2008-05-29 10:47:49.000000000 +0300
++++ AstroZaur.patched/log.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -23,6 +23,8 @@
  #include "utils.h"
  #include "program.h"
@@ -194,8 +194,8 @@ diff -rupN AstroZaur/log.cpp AstroZaur.patched/log.cpp
  #include <fltk/MenuBar.h>
  #include <fltk/ItemGroup.h>
 diff -rupN AstroZaur/lua.cpp AstroZaur.patched/lua.cpp
---- AstroZaur/lua.cpp	2008-06-04 11:41:01.000000000 +0200
-+++ AstroZaur.patched/lua.cpp	2013-09-02 15:51:39.718799510 +0200
+--- AstroZaur/lua.cpp	2008-06-04 12:41:01.000000000 +0300
++++ AstroZaur.patched/lua.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include <fltk/Threads.h>
  
@@ -206,8 +206,8 @@ diff -rupN AstroZaur/lua.cpp AstroZaur.patched/lua.cpp
  #include "lua_gui.h"
  #include "lua_swe.h"
 diff -rupN AstroZaur/lua_gui.cpp AstroZaur.patched/lua_gui.cpp
---- AstroZaur/lua_gui.cpp	2008-06-04 09:10:30.000000000 +0200
-+++ AstroZaur.patched/lua_gui.cpp	2013-09-02 15:51:39.719795174 +0200
+--- AstroZaur/lua_gui.cpp	2008-06-04 10:10:30.000000000 +0300
++++ AstroZaur.patched/lua_gui.cpp	2014-09-08 10:06:06.687520801 +0300
 @@ -19,6 +19,8 @@
  */
  
@@ -217,9 +217,36 @@ diff -rupN AstroZaur/lua_gui.cpp AstroZaur.patched/lua_gui.cpp
  #include "lua_gui.h"
  #include "program.h"
  
+@@ -128,7 +130,7 @@ static int l_choice_dialog(lua_State *L)
+ static void callback(fltk::Widget* widget, void* data) {
+     fltk::check();
+ 
+-    lua.RawGetI(LUA_REGISTRYINDEX, (int)data);
++    lua.RawGetI(LUA_REGISTRYINDEX, (long)data);
+     lua.PushString("callback");
+     lua.GetTable(-2);
+     
+@@ -843,7 +845,7 @@ void CDrawBox::draw() {
+     Widget::draw();
+ 
+     // get table
+-    lua.RawGetI(LUA_REGISTRYINDEX, (int)user_data());
++    lua.RawGetI(LUA_REGISTRYINDEX, (long)user_data());
+     
+     // get table.draw
+     lua.PushString("draw");
+@@ -867,7 +869,7 @@ void CDrawBox::draw() {
+ }
+ 
+ int CDrawBox::handle(int event) {
+-    lua.RawGetI(LUA_REGISTRYINDEX, (int)user_data());
++    lua.RawGetI(LUA_REGISTRYINDEX, (long)user_data());
+     
+     lua.PushString("handle");
+     lua.GetTable(-2);
 diff -rupN AstroZaur/lua.h AstroZaur.patched/lua.h
---- AstroZaur/lua.h	2008-05-13 07:55:48.000000000 +0200
-+++ AstroZaur.patched/lua.h	2013-09-02 15:51:39.720797721 +0200
+--- AstroZaur/lua.h	2008-05-13 08:55:48.000000000 +0300
++++ AstroZaur.patched/lua.h	2014-09-08 10:05:23.555522075 +0300
 @@ -120,6 +120,4 @@ public:
      void Push();
  };
@@ -228,8 +255,8 @@ diff -rupN AstroZaur/lua.h AstroZaur.patched/lua.h
 -
  #endif
 diff -rupN AstroZaur/main.cpp AstroZaur.patched/main.cpp
---- AstroZaur/main.cpp	2008-06-03 16:35:29.000000000 +0200
-+++ AstroZaur.patched/main.cpp	2013-09-02 15:51:39.720797721 +0200
+--- AstroZaur/main.cpp	2008-06-03 17:35:29.000000000 +0300
++++ AstroZaur.patched/main.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include "program.h"
  #include "division.h"
@@ -262,8 +289,8 @@ diff -rupN AstroZaur/main.cpp AstroZaur.patched/main.cpp
          lua.Call(0);
      }
 diff -rupN AstroZaur/Makefile AstroZaur.patched/Makefile
---- AstroZaur/Makefile	2008-06-05 09:58:43.000000000 +0200
-+++ AstroZaur.patched/Makefile	2013-09-02 15:51:39.721807806 +0200
+--- AstroZaur/Makefile	2008-06-05 10:58:43.000000000 +0300
++++ AstroZaur.patched/Makefile	2014-09-08 10:05:23.555522075 +0300
 @@ -3,8 +3,8 @@ CFLAGS = -O2 -Wall -pipe
  
  #DBUS = yes
@@ -326,8 +353,8 @@ diff -rupN AstroZaur/Makefile AstroZaur.patched/Makefile
  transform_equator.o: map_natal.h map.h astro.h point.h coord.h utils.h date.h
  transform_equator.o: timezone.h place.h transform_equator.h transform.h
 diff -rupN AstroZaur/map.cpp AstroZaur.patched/map.cpp
---- AstroZaur/map.cpp	2008-06-04 10:43:16.000000000 +0200
-+++ AstroZaur.patched/map.cpp	2013-09-02 15:51:39.722793946 +0200
+--- AstroZaur/map.cpp	2008-06-04 11:43:16.000000000 +0300
++++ AstroZaur.patched/map.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -18,6 +18,7 @@
      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
@@ -347,8 +374,8 @@ diff -rupN AstroZaur/map.cpp AstroZaur.patched/map.cpp
  
  #define PI 3.14159265358979323846
 diff -rupN AstroZaur/map_develop.cpp AstroZaur.patched/map_develop.cpp
---- AstroZaur/map_develop.cpp	2008-05-31 17:40:18.000000000 +0200
-+++ AstroZaur.patched/map_develop.cpp	2013-09-02 15:51:39.722793946 +0200
+--- AstroZaur/map_develop.cpp	2008-05-31 18:40:18.000000000 +0300
++++ AstroZaur.patched/map_develop.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -23,6 +23,8 @@
  #include "map_develop.h"
  #include "map_develop_edit.h"
@@ -359,8 +386,8 @@ diff -rupN AstroZaur/map_develop.cpp AstroZaur.patched/map_develop.cpp
  CMapDevelop::CMapDevelop() {
      iParent = NULL;
 diff -rupN AstroZaur/map_direct.cpp AstroZaur.patched/map_direct.cpp
---- AstroZaur/map_direct.cpp	2008-06-04 09:26:49.000000000 +0200
-+++ AstroZaur.patched/map_direct.cpp	2013-09-02 15:51:39.723796160 +0200
+--- AstroZaur/map_direct.cpp	2008-06-04 10:26:49.000000000 +0300
++++ AstroZaur.patched/map_direct.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -20,6 +20,8 @@
  
  #include "utils.h"
@@ -371,8 +398,8 @@ diff -rupN AstroZaur/map_direct.cpp AstroZaur.patched/map_direct.cpp
  #include "map_direct.h"
  
 diff -rupN AstroZaur/map_edit.cpp AstroZaur.patched/map_edit.cpp
---- AstroZaur/map_edit.cpp	2008-06-04 11:00:02.000000000 +0200
-+++ AstroZaur.patched/map_edit.cpp	2013-09-02 15:51:39.724803406 +0200
+--- AstroZaur/map_edit.cpp	2008-06-04 12:00:02.000000000 +0300
++++ AstroZaur.patched/map_edit.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -21,6 +21,8 @@
  #include "map_edit.h"
  #include "program.h"
@@ -383,8 +410,8 @@ diff -rupN AstroZaur/map_edit.cpp AstroZaur.patched/map_edit.cpp
  #include <fltk/ItemGroup.h>
  #include <fltk/Item.h>
 diff -rupN AstroZaur/map_ingres.cpp AstroZaur.patched/map_ingres.cpp
---- AstroZaur/map_ingres.cpp	2008-05-25 10:21:18.000000000 +0200
-+++ AstroZaur.patched/map_ingres.cpp	2013-09-02 15:51:39.724803406 +0200
+--- AstroZaur/map_ingres.cpp	2008-05-25 11:21:18.000000000 +0300
++++ AstroZaur.patched/map_ingres.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -23,6 +23,8 @@
  #include "program.h"
  #include "map_ingres.h"
@@ -395,8 +422,8 @@ diff -rupN AstroZaur/map_ingres.cpp AstroZaur.patched/map_ingres.cpp
  CMapIngres::CMapIngres() {
      Type("ingres");
 diff -rupN AstroZaur/map_multy.cpp AstroZaur.patched/map_multy.cpp
---- AstroZaur/map_multy.cpp	2008-06-02 10:26:37.000000000 +0200
-+++ AstroZaur.patched/map_multy.cpp	2013-09-02 15:51:39.725799024 +0200
+--- AstroZaur/map_multy.cpp	2008-06-02 11:26:37.000000000 +0300
++++ AstroZaur.patched/map_multy.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include "utils.h"
  #include "program.h"
@@ -407,8 +434,8 @@ diff -rupN AstroZaur/map_multy.cpp AstroZaur.patched/map_multy.cpp
  void CMapMulty::XML(xmlNodePtr node) {
      xmlNodePtr subNode = node;
 diff -rupN AstroZaur/map_natal.cpp AstroZaur.patched/map_natal.cpp
---- AstroZaur/map_natal.cpp	2008-06-04 11:16:07.000000000 +0200
-+++ AstroZaur.patched/map_natal.cpp	2013-09-02 15:51:39.725799024 +0200
+--- AstroZaur/map_natal.cpp	2008-06-04 12:16:07.000000000 +0300
++++ AstroZaur.patched/map_natal.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include "map_natal.h"
  #include "map_natal_edit.h"
@@ -419,8 +446,8 @@ diff -rupN AstroZaur/map_natal.cpp AstroZaur.patched/map_natal.cpp
  extern "C" {
      #include <sweph/swephexp.h>
 diff -rupN AstroZaur/map_progres.cpp AstroZaur.patched/map_progres.cpp
---- AstroZaur/map_progres.cpp	2008-05-25 10:21:28.000000000 +0200
-+++ AstroZaur.patched/map_progres.cpp	2013-09-02 15:51:39.726806510 +0200
+--- AstroZaur/map_progres.cpp	2008-05-25 11:21:28.000000000 +0300
++++ AstroZaur.patched/map_progres.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include "map_progres.h"
  #include "program.h"
@@ -431,8 +458,8 @@ diff -rupN AstroZaur/map_progres.cpp AstroZaur.patched/map_progres.cpp
  CMapProgres::CMapProgres() {
      Type("progres");
 diff -rupN AstroZaur/map_revolution.cpp AstroZaur.patched/map_revolution.cpp
---- AstroZaur/map_revolution.cpp	2008-05-31 17:03:51.000000000 +0200
-+++ AstroZaur.patched/map_revolution.cpp	2013-09-02 15:51:39.726806510 +0200
+--- AstroZaur/map_revolution.cpp	2008-05-31 18:03:51.000000000 +0300
++++ AstroZaur.patched/map_revolution.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -22,6 +22,8 @@
  #include "utils.h"
  #include "program.h"
@@ -443,8 +470,8 @@ diff -rupN AstroZaur/map_revolution.cpp AstroZaur.patched/map_revolution.cpp
  
  CMapRevolution::CMapRevolution() {
 diff -rupN AstroZaur/maps.cpp AstroZaur.patched/maps.cpp
---- AstroZaur/maps.cpp	2008-05-26 19:27:45.000000000 +0200
-+++ AstroZaur.patched/maps.cpp	2013-09-02 15:51:39.727794128 +0200
+--- AstroZaur/maps.cpp	2008-05-26 20:27:45.000000000 +0300
++++ AstroZaur.patched/maps.cpp	2014-09-08 10:05:23.555522075 +0300
 @@ -28,6 +28,8 @@
  #include "draw_area.h"
  #include "utils.h"
@@ -455,8 +482,8 @@ diff -rupN AstroZaur/maps.cpp AstroZaur.patched/maps.cpp
  CMaps::CMaps() {
      iAspectTable = new CAspectTable;
 diff -rupN AstroZaur/place.cpp AstroZaur.patched/place.cpp
---- AstroZaur/place.cpp	2008-05-26 19:26:31.000000000 +0200
-+++ AstroZaur.patched/place.cpp	2013-09-02 15:51:39.727794128 +0200
+--- AstroZaur/place.cpp	2008-05-26 20:26:31.000000000 +0300
++++ AstroZaur.patched/place.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -23,6 +23,8 @@
  #include "place.h"
  #include "utils.h"
@@ -467,8 +494,8 @@ diff -rupN AstroZaur/place.cpp AstroZaur.patched/place.cpp
  
  CPlace::CPlace() {
 diff -rupN AstroZaur/point.cpp AstroZaur.patched/point.cpp
---- AstroZaur/point.cpp	2008-05-26 19:26:24.000000000 +0200
-+++ AstroZaur.patched/point.cpp	2013-09-02 15:51:39.728792223 +0200
+--- AstroZaur/point.cpp	2008-05-26 20:26:24.000000000 +0300
++++ AstroZaur.patched/point.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -25,6 +25,8 @@
  #include "utils.h"
  #include "program.h"
@@ -479,8 +506,8 @@ diff -rupN AstroZaur/point.cpp AstroZaur.patched/point.cpp
  #include "line.h"
  #include <string>
 diff -rupN AstroZaur/program.cpp AstroZaur.patched/program.cpp
---- AstroZaur/program.cpp	2008-06-04 11:39:49.000000000 +0200
-+++ AstroZaur.patched/program.cpp	2013-09-02 15:51:39.729794554 +0200
+--- AstroZaur/program.cpp	2008-06-04 12:39:49.000000000 +0300
++++ AstroZaur.patched/program.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -23,6 +23,8 @@
  #include "window.h"
  #include "log.h"
@@ -499,8 +526,8 @@ diff -rupN AstroZaur/program.cpp AstroZaur.patched/program.cpp
  extern "C" {
      #include <sweph/swephexp.h>
 diff -rupN AstroZaur/program.h AstroZaur.patched/program.h
---- AstroZaur/program.h	2008-05-31 15:00:57.000000000 +0200
-+++ AstroZaur.patched/program.h	2013-09-02 15:51:39.729794554 +0200
+--- AstroZaur/program.h	2008-05-31 16:00:57.000000000 +0300
++++ AstroZaur.patched/program.h	2014-09-08 10:05:23.559522075 +0300
 @@ -95,6 +95,7 @@ public:
      bool LuaGet(const char* var);
  };
@@ -511,8 +538,8 @@ diff -rupN AstroZaur/program.h AstroZaur.patched/program.h
  
  #endif
 diff -rupN AstroZaur/projection.cpp AstroZaur.patched/projection.cpp
---- AstroZaur/projection.cpp	2008-05-26 19:26:53.000000000 +0200
-+++ AstroZaur.patched/projection.cpp	2013-09-02 15:51:39.730795729 +0200
+--- AstroZaur/projection.cpp	2008-05-26 20:26:53.000000000 +0300
++++ AstroZaur.patched/projection.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -23,6 +23,8 @@
  #include "map_natal.h"
  #include "draw_area.h"
@@ -522,7 +549,7 @@ diff -rupN AstroZaur/projection.cpp AstroZaur.patched/projection.cpp
  
  #ifdef DBUS
      #include "dbus.h"
-@@ -261,7 +263,8 @@ char* CEqliptic::InfoStr(CPoint* point) 
+@@ -261,7 +263,8 @@ char* CEqliptic::InfoStr(CPoint* point)
      char *text = point->Ecliptic()->LonStr();
  
      if (point->LonSpeed() < 0) {
@@ -533,8 +560,8 @@ diff -rupN AstroZaur/projection.cpp AstroZaur.patched/projection.cpp
      }
  
 diff -rupN AstroZaur/resolve_aspect.cpp AstroZaur.patched/resolve_aspect.cpp
---- AstroZaur/resolve_aspect.cpp	2008-01-29 14:03:55.000000000 +0100
-+++ AstroZaur.patched/resolve_aspect.cpp	2013-09-02 15:51:39.730795729 +0200
+--- AstroZaur/resolve_aspect.cpp	2008-01-29 15:03:55.000000000 +0200
++++ AstroZaur.patched/resolve_aspect.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -23,6 +23,8 @@
  #include "program.h"
  #include "resolve_aspect.h"
@@ -545,8 +572,8 @@ diff -rupN AstroZaur/resolve_aspect.cpp AstroZaur.patched/resolve_aspect.cpp
  CResolveAspect::CResolveAspect() {
      iPoint1 = NULL;
 diff -rupN AstroZaur/static_holder.cpp AstroZaur.patched/static_holder.cpp
---- AstroZaur/static_holder.cpp	1970-01-01 01:00:00.000000000 +0100
-+++ AstroZaur.patched/static_holder.cpp	2013-09-02 15:51:39.731809884 +0200
+--- AstroZaur/static_holder.cpp	1970-01-01 02:00:00.000000000 +0200
++++ AstroZaur.patched/static_holder.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -0,0 +1,40 @@
 +/*
 +    Copyright (C) 2013 Pawel Defee <pawel.defee@iki.fi>
@@ -589,8 +616,8 @@ diff -rupN AstroZaur/static_holder.cpp AstroZaur.patched/static_holder.cpp
 +	return *program_;
 +}
 diff -rupN AstroZaur/static_holder.h AstroZaur.patched/static_holder.h
---- AstroZaur/static_holder.h	1970-01-01 01:00:00.000000000 +0100
-+++ AstroZaur.patched/static_holder.h	2013-09-02 15:51:39.731809884 +0200
+--- AstroZaur/static_holder.h	1970-01-01 02:00:00.000000000 +0200
++++ AstroZaur.patched/static_holder.h	2014-09-08 10:05:23.559522075 +0300
 @@ -0,0 +1,33 @@
 +/*
 +    Copyright (C) 2013 Pawel Defee <pawel.defee@iki.fi>
@@ -626,8 +653,8 @@ diff -rupN AstroZaur/static_holder.h AstroZaur.patched/static_holder.h
 +
 +#endif // _STATIC_HOLDER_H_
 diff -rupN AstroZaur/window.cpp AstroZaur.patched/window.cpp
---- AstroZaur/window.cpp	2008-06-03 15:57:28.000000000 +0200
-+++ AstroZaur.patched/window.cpp	2013-09-02 15:51:39.732795962 +0200
+--- AstroZaur/window.cpp	2008-06-03 16:57:28.000000000 +0300
++++ AstroZaur.patched/window.cpp	2014-09-08 10:05:23.559522075 +0300
 @@ -28,6 +28,8 @@
  #include "map_raw.h"
  #include "log.h"
