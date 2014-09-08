@@ -62,6 +62,7 @@ Copyright (c) Pawel Defée 2013
 	* Compilation errors due to invalid Make definitions
 	* Crash due to memory corruption in Ubuntu Linux due to undeterministic usage of globally initialized objects.
 	* Forced English language due to incorrect display of UTF-8 (Cyrillic) characters
+	* 64-bit Linux support
 
 * The FLTK patch at:
 
