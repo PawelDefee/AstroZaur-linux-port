@@ -1,8 +1,9 @@
 AstroZaur-linux-port
 ====================
 
-This is a Linux port of the natal chart inspection application AstroZaur based on the state-of-the-art astronomical Swiss Ephemeris library. For more information, including usage instructions, see: http://strijar.ru/astrozaur/. The ported software has been succesfully built and run on RedHat RHEL 6 and Ubuntu 12.10 Linux distributions.
+This is a Linux port of AstroZaur application based on the state-of-the-art astronomical Swiss Ephemeris library. For more information, including usage instructions, see: http://strijar.ru/astrozaur/. The ported software has been succesfully built and run on RedHat RHEL 6 (32-bit), Ubuntu 12.10 (32-bit) and Ubuntu 14.04 (64-bit) Linux distributions.
 
+NOTE: The original software was written for the 32-bit Zaurus distribution. This port has been made to work also on 64-bit systems and the funcionality appears fine but no guarantees can be made with respect to completeness of the 64-bit port due to extensive use of pointers in the application.
 
 Building
 --------
